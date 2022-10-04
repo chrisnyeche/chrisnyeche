@@ -1,11 +1,6 @@
-### Welcome to my GitHouse 👋
-
-This is my [Portfolio](https://reactjs.org/) link
 <div id="header" align="center">
   <img src="https://media4.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="200"/>
 </div>
-
-
 
 <div id="badges" align="center">
   <a href="https://www.linkedin.com/in/chris-nyeche/">
@@ -41,7 +36,7 @@ This is my [Portfolio](https://reactjs.org/) link
 - 🤔 I’m looking for help with people who are ready to change the world using a unique design collaboartive system
 - 😄 Pronouns: In my free time, I think of solving problems by building a community through tech.
 - ⚡ Fun fact: Only those who learn will earn 🤩🤩🤩
-- 💥Technology I work with include: 
+- 💥Technology: As a frontend developer, my tech stacks include: 
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
    <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg" title="Next Js" alt="NextJs" width="40" height="40"/>&nbsp;
@@ -57,8 +52,23 @@ This is my [Portfolio](https://reactjs.org/) link
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 
+- 🖌️ Designer: As a designer, Ui + Ux (still learning)<div>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" title="Figma" alt="Figma" width="100" height="30"/>&nbsp;
+  <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white" title="Canva" alt="Canva" width="100" height="30"/>&nbsp;
+</div>
+
 ### :hammer_and_wrench: Languages and Tools:
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=chrisnyeche&theme=dark&background=000000)](https://git.io/streak-stats)
 
 ### 🔥 My Languages :
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chrisnyeche&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+
+### 🏫Freelance: As a freelancer, I also work with:
+  <a href="https://www.linkedin.com/in/chris-nyeche/">
+    <img src="https://img.shields.io/badge/UpWork-6FDA44?style=for-the-badge&logo=Upwork&logoColor=white" alt="Upwork Badge"/>
+  </a>
+  
+ 
+### PORTFOLIO:
+To see all the preview of my work, this is my [Portfolio](https://chris-nyeche.netlify.app/)
+
