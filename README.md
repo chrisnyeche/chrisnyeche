@@ -3,26 +3,23 @@
 </div>
 
 <div id="badges" align="center">
-  <a href="https://www.linkedin.com/in/chris-nyeche/">
-    <img src="https://img.shields.io/badge/Snapchat-FFFC00?style=for-the-badge&logo=snapchat&logoColor=black" alt="LinkedIn Badge"/>
+  <a href="https://www.snapchat.com/add/chrisdesignx?share_id=KpZDkIeTP-A&locale=en-US">
+    <img src="https://img.shields.io/badge/Snapchat-FFFC00?style=for-the-badge&logo=snapchat&logoColor=black" alt="Snapchat Badge"/>
   </a>
   <a href="https://www.linkedin.com/in/chris-nyeche/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-    <a href="https://www.linkedin.com/in/chris-nyeche/">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="LinkedIn Badge"/>
+    <a href="mailto:nyechechris@gmail.com>
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"/>
   </a>
-  <a href="your-youtube-URL">
-    <img src="https://img.shields.io/badge/Facebook-blue?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
-  </a>
-  <a href="https://twitter.com/chrisdesignx">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Twitter Badge"/>
+  <a href="https://wa.me/09036640844?text="> 
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Whatsapp Badge"/>
   </a>
   <a href="https://twitter.com/chrisdesignx">
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </a>
-    <a href="https://twitter.com/chrisdesignx">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Twitter Badge"/>
+    <a href="https://instagram.com/chris_designx">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge"/>
   </a>
 </div>
 
