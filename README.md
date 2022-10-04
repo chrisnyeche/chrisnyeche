@@ -49,7 +49,7 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 
-- 🖌️ Designer: As a designer, Ui + Ux (still learning)<div>
+- 🖌️ Designer: Ui + Ux (still learning)<div>
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" title="Figma" alt="Figma" width="100" height="30"/>&nbsp;
   <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white" title="Canva" alt="Canva" width="100" height="30"/>&nbsp;
 </div>
