@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "GorditaBlack";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("./gordita/gordita_medium-webfont.woff"), url("./gordita/gordita_medium-webfont.woff2");
+  }
+  
+  @font-face {
+    font-family: "Recoleta";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("./recoleta/Recoleta-Light.woff"), url("./recoleta/Recoleta-Light.woff2");
+  }
+  
+  @font-face {
+      font-family: "Bosch";
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url("./bosch/Bosch.otf");
+    }
+  
+  
+  .font-gordita {
+    font-family: GorditaBlack;
+  }
+  
+  .font-recoleta {
+    font-family: Recoleta;
+  }
+  
+  .font-bosch {
+      font-family: Bosch;
+    }
