@@ -80,85 +80,85 @@ const Carousel = () => {
     <Box>
       {/* Carousel */}
       <Box>
-        <Slider {...settings1} gap={5}>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+        <Slider {...settings1} gap={3}>
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               1
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               2
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               3
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               4
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               5
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               6
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               7
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               8
             </Box>
           </Box>
         </Slider>
-        <Slider {...settings2} gap={5}>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+        <Slider {...settings2} gap={3}>
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               1
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               2
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               3
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               4
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               5
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               6
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               7
             </Box>
           </Box>
-          <Box h="280px" w="210px" bg="transparent" p="5">
+          <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               8
             </Box>

@@ -3,6 +3,7 @@ import {} from "bootstrap";
 import { Component } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import "./Flipcard.css";
+import hello from "../plugins/welcome.json"
 
 class FlipCard extends Component {
   render() {
@@ -37,11 +38,11 @@ const MainArea = () => {
     return (
       <Box className="main-area">
         <Box className="blog-post">
-          <Text as="h2" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={"34px"} textAlign={"center"}>
+          <Text as="h2" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={{base: "28px", md: "34px"}} textAlign={"center"}>
             Good {timeOfDay}
           </Text>
           <Text as="h3" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={{ base: "16px", md: "20px" }} my={3}>
-            React Hooks are functions which "hook into" React state and lifecycle features from function components. Hooks don't work inside classes. Which of the following is not a default REACT hook?
+            As a React developer,  I am introducing you to HOOKS. React Hooks are functions which "hook into" React state and lifecycle features from function components. Which of the following is not a default REACT hook?
           </Text>
         </Box>
       </Box>
@@ -62,11 +63,11 @@ class BlogCard extends Component {
     const frontButtons = ["DeferredValue", "InsertionEffect", "SyncExternalStore"];
     const backButtons = ["Height", "Water", "Shadow"];
     return (
-      <Box className={"card-container" + (this.state.flipped ? " flipped" : "")} zIndex={2} w={{ base: "100%", lg: "600px" }} h={"600px"} padding={"10px"} position="relative">
+      <Box className={"card-container" + (this.state.flipped ? " flipped" : "")} zIndex={2} w={{ base: "100%", lg: "100%" }} h={"600px"} padding={"10px"}>
         {/* Front Flipcard */}
         <Box className="front" textAlign={{ base: "start", md: "center" }}>
-          <Box w={{ base: "100%", md: "70%" }} mx="auto">
-            <Player autoplay loop src="https://assets9.lottiefiles.com/packages/lf20_78DCvgGZC7.json" />
+          <Box w={{ base: "100%", md: "50%" }} mx="auto">
+            <Player autoplay loop src={hello} />
           </Box>
           <MainArea />
           {/* Front Buttons */}

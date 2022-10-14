@@ -1,9 +1,9 @@
-import { Box } from "@chakra-ui/react";
+import { Box} from "@chakra-ui/react";
 import Carousel from "../plugins/Carousel";
 
 const Projects = () => {
   return (
-    <Box as={"section"}>
+    <Box as={"section"} mt={10}>
       <Carousel />
     </Box>
   );

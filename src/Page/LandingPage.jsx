@@ -1,4 +1,4 @@
-import { Input, Flex, Box, Center, FormControl, FormLabel, FormHelperText, FormErrorMessage } from "@chakra-ui/react";
+import { Input, Flex, Box, Center, FormControl, FormLabel, FormHelperText, FormErrorMessage, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import Particle from "../plugins/Particle";
 import Hero from "../components/Hero";
@@ -44,7 +44,7 @@ const LandingPage = () => {
           <Box mx="auto" px="3">
             <Type />
           </Box>
-          <Box mx="auto" my={8} w={{base: "100%", lg: "40%"}} px="3">
+          <Box mx="auto" my={8} w={{ base: "100%", lg: "40%" }} px="3">
             <FormControl isInvalid={isError}>
               <FormLabel>Before you access this portfolio. Please What is your Name?</FormLabel>
               <Input type="email" value={value} onChange={handleChange} placeholder="Input your name" />
@@ -63,17 +63,19 @@ const LandingPage = () => {
           </Box>
         </Flex>
       ) : (
-        <Box>
+        <Box position={"relative"} textAlign={"center"}>
           {/* Sun & Moon */}
           <Center my={2} className="fixed-top">
             <Button onClick={toggleColorMode} className={"floating"} rounded="full">
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Center>
+          <Text className="shimmer" fontSize={{base: "2.5em", md: "4rem"}}> WELCOME TO MY WORLD </Text>
+          <Text className="shimmer" fontSize={{base: "1.5em", md: "2rem"}} textTransform={"uppercase"}> {value} </Text>
           <Hero value={value} />
           <Projects />
           <AnimateCursor />
-          <Box zIndex={1} position="absolute">
+          <Box position={"absolute"} zIndex={1}>
             <Particle />
           </Box>
         </Box>
