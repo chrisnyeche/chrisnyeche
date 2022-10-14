@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Image, Button, Stack, HStack, List, ListItem, ListIcon } from "@chakra-ui/react";
+import { Flex, Text, Box, Image, Button, HStack, List, ListItem, ListIcon } from "@chakra-ui/react";
 import { FaFacebook, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { MdStar } from "react-icons/md";
