@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import "./App.css";
-import LandingPage from "./Page/LandingPage";
+import LandingPage from "./page/LandingPage";
 
 const App = () => {
   return (
