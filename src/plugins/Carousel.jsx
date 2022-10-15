@@ -8,8 +8,8 @@ const Carousel = () => {
         infinite: true,
         rtl: true,
         autoplay: true,
-        speed: 250,
-        autoplaySpeed: 500,
+        speed: 1000,
+        autoplaySpeed: 1000,
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
@@ -44,8 +44,8 @@ const Carousel = () => {
         infinite: true,
         autoplay: true,
         rtl : false,
-        speed: 250,
-        autoplaySpeed: 500,
+        speed: 1000,
+        autoplaySpeed: 1000,
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
@@ -80,7 +80,7 @@ const Carousel = () => {
     <Box>
       {/* Carousel */}
       <Box>
-        <Slider {...settings1} gap={3}>
+        <Slider {...settings1} gap={5}>
           <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               1
@@ -122,7 +122,7 @@ const Carousel = () => {
             </Box>
           </Box>
         </Slider>
-        <Slider {...settings2} gap={3}>
+        <Slider {...settings2} gap={5}>
           <Box h="250px" w="210px" bg="transparent" p="5">
             <Box backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} zIndex={2} w="250px" h="150px" borderRadius={"20px"} padding={"10px"}>
               1
