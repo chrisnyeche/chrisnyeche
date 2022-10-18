@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Carousel from "../plugins/Carousel";
+import Spring from "../plugins/Spring";
 
 const Projects = () => {
   return (
@@ -8,6 +9,7 @@ const Projects = () => {
         <Text as={"h2"} className="flick font-bosch"  data-heading="MY TECH STACK" w={"100%"} fontSize={{base: "5xl", lg: "7xl"}}></Text>
       </Flex>
       <Carousel />
+      <Spring/>
     </Box>
   );
 };
