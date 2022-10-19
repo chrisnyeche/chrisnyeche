@@ -1,8 +1,9 @@
-import { Flex, Text, Box, Image, Button, HStack, List, ListItem, ListIcon } from "@chakra-ui/react";
+import { Flex, Text, Box, Image, Button, HStack, List, ListItem, ListIcon, Center } from "@chakra-ui/react";
 import { FaFacebook, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { MdStar } from "react-icons/md";
 import FlipCard from "../plugins/FlipCard";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Hero = (props) => {
   const socialButtons = [
@@ -34,37 +35,37 @@ const Hero = (props) => {
   const values = ["Creativity", "Humility", "Responsibility", "Innovative", "Simplicity"];
 
   return (
-    <Box as={"section"} display={"flex"} h="fit-content" flexDirection={{ base: "column", lg: "row-reverse" }} padding={5} justifyContent={"space-between"} mt={5} gap={5} alignItems={"center"}>
+    <Box as={"section"} display={"flex"} h="fit-content" flexDirection={{ base: "column", lg: "row-reverse" }} padding={5} justifyContent={"space-between"} mt={5} gap={5} alignItems={"center"} backgroundColor={{ base: "transparent", lg: "rgba(112, 71, 235, .15)" }} backdropFilter={"blur(5px)"} boxShadow={{ base: "none", lg: "10px 20px rgba(112, 71, 235, .5)" }} borderRadius={"20px"} m={{ base: "3", md: "10" }}>
       {/* Flipcard */}
-      <Box as={"section"} w={{ base: "100%", lg: "50%" }}>
+      {/* <Box as={"section"} w={{ base: "100%", lg: "50%" }}>
         <FlipCard value={props.value} />
-      </Box>
+      </Box> */}
+      <Player autoplay loop src={"https://assets4.lottiefiles.com/packages/lf20_qez3ogw9.json"} />
 
       {/* Profile */}
-      <Box className="font-bosch" backgroundColor={"rgba(112, 71, 235, .15)"} backdropFilter={"blur(5px)"} shadow={"lg"} borderRadius={"20px"} padding={"10px"} w={{ base: "100%", md: "90%", lg: "50%" }} h={{ base: "100%" }} mt={{ base: "230px", md: "70px", lg: "0px" }} pt={10}>
-        <Flex alignItems={"center"} gap={"10"} flexDirection={{ base: "column", lg: "row" }}>
-          {/* Profile picture */}
-          <Image src={"https://avatars.githubusercontent.com/u/91467592?v=4"} alt={"Chris Nyeche"} width={40} rounded="full" />
-
-          {/* About */}
-          <Box textAlign={"center"}>
-            {/* Animated Text */}
-            <Text fontSize={{base: "18px", md: "25px"}}>
-              <TypeAnimation
-                sequence={["I am a Developer", 1000, "I am a Designer", 1000, "A Software Engineer", 1000, "I am a Developer", 1000]}
-                speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                style={{ fontSize: "25px" }}
-                wrapper="span" // Animation will be rendered as a <span>
-                repeat={Infinity} // Repeat this Animation Sequence infinitely
-              />
-            </Text>
-            {/* Social buttons */}
+      <Box className="font-bosch" padding={"10px"} w={{ base: "100%", md: "90%", lg: "50%" }} h={{ base: "100%" }} pt={10} backgroundColor={{ lg: "transparent", base: "rgba(112, 71, 235, .15)" }} borderRadius={"20px"}>
+        {/* Profile picture */}
+        <Image src={"https://avatars.githubusercontent.com/u/91467592?v=4"} alt={"Chris Nyeche"} width={"20rem"} rounded="full" mx="auto" />
+        {/* About */}
+        <Box textAlign={"center"} mx="auto">
+          {/* Animated Text */}
+          <Text fontSize={{ base: "18px", md: "25px" }} textAlign="center" my={2}>
+            <TypeAnimation
+              sequence={["I am a Developer", 1000, "I am a Designer", 1000, "A Software Engineer", 1000, "I am a Developer", 1000]}
+              speed={50} // Custom Speed from 1-99 - Default Speed: 40
+              style={{ fontSize: "25px" }}
+              wrapper="span" // Animation will be rendered as a <span>
+              repeat={Infinity} // Repeat this Animation Sequence infinitely
+            />
+          </Text>
+          {/* Social buttons */}
+          <Center>
             <HStack>
               {socialButtons.map((btn) => {
                 return (
                   <Box>
                     {/* Desktop */}
-                    <Button key={btn.href} color="white" as={"a"} leftIcon={btn.leftIcon} bg={btn.backgroundColor} size={'xs'} href={btn.href} textDecoration={"none"} _hover={{ bg: btn.backgroundColor, color: "white" }} display={{ base: "none", lg: "flex" }}>
+                    <Button key={btn.href} color="white" as={"a"} leftIcon={btn.leftIcon} bg={btn.backgroundColor} size={"md"} href={btn.href} textDecoration={"none"} _hover={{ bg: btn.backgroundColor, color: "white" }} display={{ base: "none", lg: "flex" }}>
                       {btn.name}
                     </Button>
                     {/* Mobile */}
@@ -75,8 +76,8 @@ const Hero = (props) => {
                 );
               })}
             </HStack>
-          </Box>
-        </Flex>
+          </Center>
+        </Box>
 
         {/* About Me */}
         <Text as={"h1"} fontWeight="800" fontSize={"40px"} className="font-bosch" mt={5}>

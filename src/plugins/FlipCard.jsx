@@ -42,7 +42,7 @@ const MainArea = () => {
             Good {timeOfDay}
           </Text>
           <Text as="h3" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={{ base: "16px", md: "20px" }} my={3}>
-            As a React developer,  I am introducing you to HOOKS. React Hooks are functions which "hook into" React state and lifecycle features from function components. Which of the following is not a default REACT hook?
+            Which of the following is not a default REACT hook?
           </Text>
         </Box>
       </Box>
