@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Carousel from "../plugins/Carousel";
-// import ProCarousel from "../plugins/ProjectCarousell";
 import ProSlider from "../plugins/ProSlider";
+import Flashlight from './../plugins/Flashlight';
 
 const Projects = () => {
   return (
@@ -10,8 +10,8 @@ const Projects = () => {
         <Text as={"h2"} className="flick font-spaceranger__Gradient" data-heading="MY TECH STACK" w={"100%"} fontSize={{ base: "5xl", lg: "7xl" }}></Text>
       </Flex>
       <Carousel />
-      {/* <Hover/> */}
       <ProSlider/>
+      <Flashlight/>
     </Box>
   );
 };
