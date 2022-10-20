@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Carousel from "../plugins/Carousel";
 import Hover from "../plugins/Hover";
-// import ProCarousel from "../plugins/ProjectCarousel";
+// import ProCarousel from "../plugins/ProjectCarousell";
 import ProSlider from "../plugins/ProSlider";
 
 const Projects = () => {
