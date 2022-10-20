@@ -21,6 +21,8 @@ const LandingPage = () => {
   const [value, setValue] = useState("");
   // Loading display
   const [display, setDisplay] = useState("none");
+  // Emoji Display
+  const [emoji, setEmoji] = useState("View Portfolio");
 
   const isError = value === "";
 
@@ -34,18 +36,22 @@ const LandingPage = () => {
       ? setLoader(false)
       : setTimeout(() => {
           setDisplay("block");
+          setEmoji("Loading... 😀")
         }, 500) &&
         setTimeout(() => {
           setLoader(true) && setDisplay("block");
         }, 3000);
+        
   };
 
   return (
     <Box as={"main"}>
       {!loader ? (
-        <Flex h="100vh" justifyContent={"center"} alignItems={"center"} flexDirection={{ base: "column" }}>
-          <Box mx="auto" px="3">
+        <Flex h="100vh" justifyContent={"center"} alignItems={"center"} flexDirection={{ base: "column" }} position={"relative"}>
+          <Center position={"absolute"} top={"10px"}>
             <EyesFollow />
+          </Center>
+          <Box mx="auto" px="3">
             <Type />
           </Box>
           <Box mx="auto" my={8} w={{ base: "100%", lg: "40%" }} px="3">
@@ -65,9 +71,7 @@ const LandingPage = () => {
                 <FormErrorMessage>Name is required.</FormErrorMessage>
               )}
             </FormControl>
-            <Button onClick={handleClick} my={2}>
-              View Portfolio 😀
-            </Button>
+            <Button onClick={handleClick} my={2}>{emoji}</Button>
           </Box>
           <AnimateCursor />
           {/* Floating Planets */}
@@ -103,13 +107,11 @@ const LandingPage = () => {
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Center>
-          <Text className="shimmer font-recoleta" fontSize={{ base: "2.5em", md: "4rem" }}>
-            {" "}
-            WELCOME TO MY WORLD{" "}
+          <Text className="shimmer font-cyberpunk" fontSize={{ base: "2.5em", md: "4rem" }}>
+            WELCOME TO MY WORLD
           </Text>
-          <Text className="shimmer" fontSize={{ base: "1.5em", md: "2rem" }} textTransform={"uppercase"}>
-            {" "}
-            {value}{" "}
+          <Text className="shimmer font-spaceranger__3d" fontSize={{ base: "1.5em", md: "2rem" }} textTransform={"uppercase"}>
+            {value}
           </Text>
           <Hero value={value} />
           <Projects />

@@ -17,7 +17,7 @@ const Type = () => {
 
   return (
     <Box>
-      <Text as={"h1"} fontWeight="800" fontSize={"50px"} className="font-bosch">{text}</Text>
+      <Text as={"h1"} fontWeight="500" fontSize={"50px"} className="font-pilotcommand">{text}</Text>
     </Box>
   );
 };

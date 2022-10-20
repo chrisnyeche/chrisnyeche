@@ -1,36 +1,87 @@
+/* Gordita Black */
 @font-face {
-    font-family: "GorditaBlack";
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url("./gordita/gordita_medium-webfont.woff"), url("./gordita/gordita_medium-webfont.woff2");
-  }
-  
-  @font-face {
-    font-family: "Recoleta";
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url("./recoleta/Recoleta-Light.woff"), url("./recoleta/Recoleta-Light.woff2");
-  }
-  
-  @font-face {
-      font-family: "Bosch";
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: url("./bosch/Bosch.otf");
-    }
-  
-  
-  .font-gordita {
-    font-family: GorditaBlack;
-  }
-  
-  .font-recoleta {
-    font-family: Recoleta;
-  }
-  
-  .font-bosch {
-      font-family: Bosch;
-    }
+  font-family: "GorditaBlack";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./gordita/gordita_medium-webfont.woff"), url("./gordita/gordita_medium-webfont.woff2");
+}
+
+/* Recoleta */
+@font-face {
+  font-family: "Recoleta";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./recoleta/Recoleta-Light.woff"), url("./recoleta/Recoleta-Light.woff2");
+}
+
+/* Bosch */
+@font-face {
+  font-family: "Bosch";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./bosch/Bosch.otf");
+}
+
+/* Space Ranger */
+@import url("http://fonts.cdnfonts.com/css/space-ranger");
+
+/* Pilot Command */
+@import url("http://fonts.cdnfonts.com/css/pilot-command");
+
+/* Cyberpunk */
+@font-face {
+  font-family: "Cyberpunk";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./cyberpunk/Cyberpunks.otf");
+}
+
+/* Nebula */
+@font-face {
+  font-family: "Nebula";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./nebula/Nebula-Regular.otf");
+}
+
+
+.font-gordita {
+  font-family: GorditaBlack;
+}
+
+.font-recoleta {
+  font-family: Recoleta;
+}
+
+.font-bosch {
+  font-family: Bosch;
+}
+
+.font-spaceranger {
+  font-family: "Space Ranger", sans-serif;
+}
+
+.font-spaceranger__3d {
+  font-family: "Space Ranger 3D", sans-serif;
+}
+
+.font-spaceranger__Gradient {
+  font-family: "Space Ranger Gradient", sans-serif;
+}
+
+.font-pilotcommand {
+  font-family: 'Pilot Command', sans-serif;
+}
+
+.font-cyberpunk{
+  font-family: Cyberpunk;
+}
+
+.font-nebula{
+  font-family: Nebula;
+}

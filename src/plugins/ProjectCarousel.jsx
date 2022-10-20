@@ -1,6 +1,5 @@
 import Slider from "react-slick";
-import { Box, Image } from "@chakra-ui/react";
-import { Player } from "@lottiefiles/react-lottie-player";
+import { Box } from "@chakra-ui/react";
 import image16 from "../images/16.jpg";
 import "./Hover.css";
 
@@ -47,25 +46,6 @@ const ProCarousel = () => {
       {/* ProCarousel */}
       <Box overflow={"hidden"}>
         <Slider {...settings1}>
-          {/* Wordpress */}
-          <Box h="300px"  w="300px" bg="transparent">
-            <Box>
-              <figure class="effect-julia">
-                <img src={image16} alt="img22" />
-                <figcaption>
-                  <h2>
-                    Passionate <span>Julia</span>
-                  </h2>
-                  <div>
-                    <p>Julia dances in the deep dark</p>
-                    <p>She loves the smell of the ocean</p>
-                    <p>And dives into the morning light</p>
-                  </div>
-                  <a href="./">View more</a>
-                </figcaption>
-              </figure>
-            </Box>
-          </Box>
           {/* React */}
           <Box h="300px"  w="300px" bg="transparent">
           <figure class="effect-goliath">

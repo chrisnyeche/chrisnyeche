@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import Slider from "react-slick";
-import image16 from "../images/16.jpg";
+import "./ProSlider.css"
 
 
 export default class ProSlider extends Component {
@@ -35,7 +35,7 @@ export default class ProSlider extends Component {
             },
           },
           {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -56,7 +56,7 @@ export default class ProSlider extends Component {
         <Box overflow={"hidden"}>
         <Slider ref={c => (this.slider = c)} {...settings} gap={3}>
           {/* Wordpress */}
-          <Flex key={1} justifyContent="center">
+          <Box key={1} px={{base: "30px", lg:"0px"}}>
               <figure class="effect-julia">
                 <img src={"https://www.nftsstreet.com/wp-content/uploads/2022/01/Webp.net-gifmaker.gif"} alt="img22" />
                 <figcaption>
@@ -71,9 +71,9 @@ export default class ProSlider extends Component {
                   <a href="./">View more</a>
                 </figcaption>
               </figure>
-          </Flex>
+          </Box>
           {/* React */}
-          <Box   key={2}>
+          <Box key={2} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-goliath">
             <img src={"https://nftartwork.co.uk/wp-content/uploads/2021/08/Mike-Tyson.gif"} alt="img23" />
             <figcaption>
@@ -86,7 +86,7 @@ export default class ProSlider extends Component {
           </figure>
           </Box>
           {/* Next Js */}
-          <Box key={3}>
+          <Box key={3} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-apollo">
             <img src={"https://dls.so/mint/img/avatar.gif"} alt="img18" />
             <figcaption>
@@ -99,7 +99,7 @@ export default class ProSlider extends Component {
           </figure>
           </Box>
           {/* Javascript */}
-          <Box   key={4}>
+          <Box key={4} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-duke">
             <img src="https://cdn.dribbble.com/users/1382369/screenshots/17876859/media/f3686481b564dd299418692bc8384caf.gif" alt="img03" />
             <figcaption>
@@ -121,7 +121,7 @@ export default class ProSlider extends Component {
           </figure>
           </Box>
           {/* Chakra */}
-          <Box   key={5}>
+          <Box key={5} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-terry">
             <img src="https://airnfts.s3.amazonaws.com/profile-images/20220221/0xbbC213d442cDe37138b4383565D44dB3F4F79aff_1645477060045.gif" alt="img16" />
             <figcaption>
@@ -146,7 +146,7 @@ export default class ProSlider extends Component {
           </figure>
           </Box>
           {/* Bootstrap */}
-          <Box   key={6}>
+          <Box key={6} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-kira">
             <img src="https://cdn.shopify.com/s/files/1/0605/4998/8564/products/4_b3eb1e16-871c-4475-b702-93de6ae23e28_2048x2048.jpg?v=1647414907" alt="img17" />
             <figcaption>
@@ -171,7 +171,7 @@ export default class ProSlider extends Component {
           </figure>
           </Box>
           {/* CSS */}
-          <Box   key={7}>
+          <Box key={7} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-steve">
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/71a67a134500327.61d6d49b57b8f.gif" alt="img29" />
             <figcaption>
@@ -184,7 +184,7 @@ export default class ProSlider extends Component {
           </figure>
           </Box>
           {/* Html */}
-          <Box   key={8}>
+          <Box key={8} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-moses">
             <img src="https://nftcalendar.io/storage/uploads/events/2022/3/cEk4iKfB2JVEj2OfwwPMBD8vuwYbcBdzwOduZXtU.gif" alt="img24" />
             <figcaption>
@@ -197,7 +197,7 @@ export default class ProSlider extends Component {
           </figure>
           </Box>
           {/* Figma */}
-          <Box   key={9}>
+          <Box key={9} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-jazz">
             <img src="https://rndmcharacters-s3.s3.amazonaws.com/InvisibleFriends-roadmap/KITH_web.gif" alt="img25" />
             <figcaption>
