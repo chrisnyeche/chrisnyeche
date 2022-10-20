@@ -9,6 +9,7 @@ import Projects from "../components/Projects";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Button, useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import EyesFollow from "../plugins/MightyMouse";
 import Astronaut from "../images/astronaut.png";
 
 const LandingPage = () => {
@@ -44,6 +45,7 @@ const LandingPage = () => {
       {!loader ? (
         <Flex h="100vh" justifyContent={"center"} alignItems={"center"} flexDirection={{ base: "column" }}>
           <Box mx="auto" px="3">
+            <EyesFollow />
             <Type />
           </Box>
           <Box mx="auto" my={8} w={{ base: "100%", lg: "40%" }} px="3">
@@ -51,18 +53,29 @@ const LandingPage = () => {
             <FormControl isInvalid={isError}>
               <FormLabel>Before you access this portfolio. Please What is your Name?</FormLabel>
               <Input type="email" value={value} onChange={handleChange} placeholder="Input your name" />
-              {!isError ? <FormHelperText>Thank you <Text as="span" className="font-gordita" color={"#FFC233"}>{value}</Text>  for choosing to view my portfolio. Now you can continue </FormHelperText> : <FormErrorMessage>Name is required.</FormErrorMessage>}
+              {!isError ? (
+                <FormHelperText>
+                  Thank you{" "}
+                  <Text as="span" className="font-gordita" color={"#FFC233"}>
+                    {value}
+                  </Text>{" "}
+                  for choosing to view my portfolio. Now you can continue{" "}
+                </FormHelperText>
+              ) : (
+                <FormErrorMessage>Name is required.</FormErrorMessage>
+              )}
             </FormControl>
             <Button onClick={handleClick} my={2}>
               View Portfolio 😀
             </Button>
           </Box>
+          <AnimateCursor />
           {/* Floating Planets */}
-          <Box position={"absolute"} left={{ base: "10px" }} top={"20px"} w={"40"} display={{base: "none", md: "block"}}>
+          <Box position={"absolute"} left={{ base: "10px" }} top={"20px"} w={"40"} display={{ base: "none", md: "block" }}>
             <Player autoplay loop src={"https://assets2.lottiefiles.com/packages/lf20_pvghcvuc.json"} />
           </Box>
           {/* Floating man */}
-          <Box position={"absolute"} left={{ base: "10px" }} bottom={"20px"} w={"40"} display={{base: "none", md: "block"}}>
+          <Box position={"absolute"} left={{ base: "10px" }} bottom={"20px"} w={"40"} display={{ base: "none", md: "block" }}>
             <Player autoplay loop src={"https://assets5.lottiefiles.com/packages/lf20_dwmb4mrt.json"} />
           </Box>
           {/* Astronaut */}
@@ -70,12 +83,12 @@ const LandingPage = () => {
             <Image src={Astronaut} className="floating" alt="Falling Astronaut" w={{ base: 20, md: 40 }} />
           </Box>
           {/* Web3 Astronaut */}
-          <Box position={"absolute"} right={{ base: "40px" }} top={"20px"} w={"40"} display={{base: "none", lg: "block"}}>
+          <Box position={"absolute"} right={{ base: "40px" }} top={"20px"} w={"40"} display={{ base: "none", lg: "block" }}>
             <Player autoplay loop src={"https://assets10.lottiefiles.com/packages/lf20_l4ny0jjm.json"} />
           </Box>
           {/* Loading Mode */}
           <Box position={"absolute"} right={"1px"} bottom={"1px"} display={display} w={"40"}>
-          <Player autoplay loop src={"https://assets10.lottiefiles.com/packages/lf20_ypej3gd9.json"} />
+            <Player autoplay loop src={"https://assets10.lottiefiles.com/packages/lf20_ypej3gd9.json"} />
           </Box>
           {/* Particle Effect */}
           <Box zIndex={1} position="absolute">
