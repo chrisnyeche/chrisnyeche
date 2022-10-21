@@ -11,6 +11,8 @@ import { Button, useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import EyesFollow from "../plugins/MightyMouse";
 import Astronaut from "../images/astronaut.png";
+import Testimonial from "../components/Testimonial";
+import Contact from "../components/Contact";
 
 const LandingPage = () => {
   // Loader state
@@ -95,7 +97,7 @@ const LandingPage = () => {
             <Player autoplay loop src={"https://assets10.lottiefiles.com/packages/lf20_ypej3gd9.json"} />
           </Box>
           {/* Particle Effect */}
-          <Box zIndex={1} position="absolute">
+          <Box zIndex={"-1"} position="absolute">
             <Particle />
           </Box>
         </Flex>
@@ -115,8 +117,10 @@ const LandingPage = () => {
           </Text>
           <Hero value={value} />
           <Projects />
+          <Testimonial/>
+          <Contact/>
           <AnimateCursor />
-          <Box position={"absolute"} zIndex={1}>
+          <Box position={"absolute"} zIndex={"-1"}>
             <Particle />
           </Box>
         </Box>

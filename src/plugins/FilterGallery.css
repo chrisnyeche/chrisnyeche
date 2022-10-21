@@ -1,0 +1,132 @@
+
+.form2{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 40px 0;
+  }
+  
+  label{
+    background: #faa7b7;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  input:checked~label{
+    background: #a8b4fc;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 15px #a8b4fc80;
+  }
+  
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li{
+    margin: 10px 10px;
+  }
+  
+  figure{
+    z-index: 1;
+    min-width: 300px;
+    overflow: hidden;
+    margin: 0 5px;
+    animation: show .8s ease;
+  }
+  
+  @keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  img{
+    width: 300px;
+    height: 250px;
+    left: 0;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #a8b4fc30;
+  }
+  
+  figcaption{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  figure figcaption{
+    margin: 0;
+    position: relative;
+    z-index: -1;
+  }
+  
+  figure:hover figcaption{
+    opacity: 1;
+    transform: translateY(-19px);
+  }
+  
+  figcaption{
+    opacity: 0;
+    transform: translateY(-200px);
+    background: white;
+    border-radius: 0  0 20px 20px;
+    padding: 30px 0 20px 0;
+    transition: .3s;
+  }
+  
+  span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #969696;
+  }
+  
+  #root a{
+    color: #faa7b7;
+  }
+  
+  .photo-source{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #969696;
+    margin-bottom: 40px;
+  }
+  
+  @keyframes transform{
+    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+    14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+    28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+    42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+    56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+    70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+    84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+  }
+  
+  
+  @keyframes movement{
+    0%,100% { transform: none; }
+    50% { transform: translateY(20%) rotateY(10deg); }
+  }
+  
+  .fa-instagram{
+    position: fixed;
+    color: #cecece;
+    top: 2%;
+    right: 2%;
+    font-size: 38px;
+    font-weight: 400;
+  }
+  .fa-instagram:hover{
+    font-size: 42px;
+    color: #faa7b7;
+    transition: all .1s linear;
+    cursor: pointer;
+  }

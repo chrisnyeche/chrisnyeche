@@ -1,85 +1,40 @@
-import { useState } from 'react'
-import { useSprings, animated, to as interpolate } from '@react-spring/web'
+import React, { useRef } from 'react'
+import clamp from 'lodash-es/clamp'
+import swap from 'lodash-move'
 import { useDrag } from '@use-gesture/react'
-
+import { useSprings, animated, interpolate } from 'react-spring'
 import "./Spring.css"
-import { Box } from '@chakra-ui/react'
 
-const cards = [
-  'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/3/3a/TheLovers.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg',
-]
+// Returns fitting styles for dragged/idle items
+const fn = (order, down, originalIndex, curIndex, y) => (index) =>
+  down && index === originalIndex
+    ? { y: curIndex * 100 + y, scale: 1.1, zIndex: '1', shadow: 15, immediate: (n) => n === 'y' || n === 'zIndex' }
+    : { y: order.indexOf(index) * 100, scale: 1, zIndex: '0', shadow: 1, immediate: false }
 
-// These two are just helpers, they curate spring data, values that are later being interpolated into css
-const to = (i) => ({
-  x: 0,
-  y: i * -4,
-  scale: 1,
-  rot: -10 + Math.random() * 20,
-  delay: i * 100,
-})
-const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
-// This is being used down there in the view, it interpolates rotation and scale into a css transform
-const trans = (r, s) =>
-  `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
-
-function Deck() {
-  const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
-  const [props, api] = useSprings(cards.length, i => ({
-    ...to(i),
-    from: from(i),
-  })) // Create a bunch of springs using the helpers above
-  // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
-  const bind = useDrag(({ args: [index], active, movement: [mx], direction: [xDir], velocity: [vx] }) => {
-    const trigger = vx > 0.2 // If you flick hard enough it should trigger the card to fly out
-    if (!active && trigger) gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
-    api.start(i => {
-      if (index !== i) return // We're only interested in changing spring-data for the current spring
-      const isGone = gone.has(index)
-      const x = isGone ? (200 + window.innerWidth) * xDir : active ? mx : 0 // When a card is gone it flys out left or right, otherwise goes back to zero
-      const rot = mx / 100 + (isGone ? xDir * 10 * vx : 0) // How much the card tilts, flicking it harder makes it rotate faster
-      const scale = active ? 1.1 : 1 // Active cards lift up a bit
-      return {
-        x,
-        rot,
-        scale,
-        delay: undefined,
-        config: { friction: 50, tension: active ? 800 : isGone ? 200 : 500 },
-      }
-    })
-    if (!active && gone.size === cards.length)
-      setTimeout(() => {
-        gone.clear()
-        api.start(i => to(i))
-      }, 600)
+export default function DraggableList({ items }) {
+  const order = useRef(items.map((_, index) => index)) // Store indicies as a local ref, this represents the item order
+  const [springs, setSprings] = useSprings(items.length, fn(order.current)) // Create springs, each corresponds to an item, controlling its transform, scale, etc.
+  const bind = useDrag(({ args: [originalIndex], down, delta: [, y] }) => {
+    const curIndex = order.current.indexOf(originalIndex)
+    const curRow = clamp(Math.round((curIndex * 100 + y) / 100), 0, items.length - 1)
+    const newOrder = swap(order.current, curIndex, curRow)
+    setSprings(fn(newOrder, down, originalIndex, curIndex, y)) // Feed springs new style data, they'll animate the view without causing a single render
+    if (!down) order.current = newOrder
   })
-  // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
-    <>
-      {props.map(({ x, y, rot, scale }, i) => (
-        <animated.div className="deck" key={i} style={{ x, y }}>
-          {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
-          <animated.div
-            {...bind(i)}
-            style={{
-              transform: interpolate([rot, scale], trans),
-              backgroundImage: `url(${cards[i]})`,
-            }}
-          />
-        </animated.div>
+    <div className="content" style={{ height: items.length * 100 }}>
+      {springs.map(({ zIndex, shadow, y, scale }, i) => (
+        <animated.div
+          {...bind(i)}
+          key={i}
+          style={{
+            zIndex,
+            boxShadow: shadow.interpolate((s) => `rgba(0, 0, 0, 0.15) 0px ${s}px ${2 * s}px 0px`),
+            transform: interpolate([y, scale], (y, s) => `translate3d(0,${y}px,0) scale(${s})`)
+          }}
+          children={items[i]}
+        />
       ))}
-    </>
-  )
-}
-
-export default function Spring() {
-  return (
-    <Box className={`flex fill center containerr`}>
-      <Deck />
-    </Box>
+    </div>
   )
 }

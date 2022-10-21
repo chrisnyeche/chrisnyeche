@@ -1,8 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Carousel from "../plugins/Carousel";
 import ProSlider from "../plugins/ProSlider";
-import Flashlight from './../plugins/Flashlight';
-
+import TutorCard from "./TutorCard";
 const Projects = () => {
   return (
     <Box as={"section"} mt={"70px"}>
@@ -11,7 +10,7 @@ const Projects = () => {
       </Flex>
       <Carousel />
       <ProSlider/>
-      <Flashlight/>
+      <TutorCard/>
     </Box>
   );
 };

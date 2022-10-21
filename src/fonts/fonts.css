@@ -49,6 +49,15 @@
   src: url("./nebula/Nebula-Regular.otf");
 }
 
+/* Death Star */
+@font-face {
+  font-family: "Deathstar";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./deathstar/Death-Star.otf");
+}
+
 
 .font-gordita {
   font-family: GorditaBlack;
@@ -85,3 +94,8 @@
 .font-nebula{
   font-family: Nebula;
 }
+
+.font-deathstar{
+  font-family: Deathstar;
+}
+
