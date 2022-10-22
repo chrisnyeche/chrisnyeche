@@ -151,3 +151,8 @@
     text-shadow: none;
   }
 }
+
+.rounded{
+  border-radius: 50px;
+  width: 80%;
+}

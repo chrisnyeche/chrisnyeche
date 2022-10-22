@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "./ProSlider.css"
 
@@ -53,6 +53,7 @@ export default class ProSlider extends Component {
       };
     return (
       <Box>
+        <Text as={"h2"} className="font-cyberpunk" fontSize={{ base: "5xl", lg: "7xl" }}>MY PROJECTS</Text>
         <Box overflow={"hidden"}>
         <Slider ref={c => (this.slider = c)} {...settings} gap={3}>
           {/* Wordpress */}

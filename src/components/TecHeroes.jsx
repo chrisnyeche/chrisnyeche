@@ -10,7 +10,7 @@ import {
 
   import Ibifuro from "../images/Ibifuro-Asawo.jpg"
   
-  const testimonials = [
+  const techeroes = [
     {
       name: 'Steve Jobs',
       role: 'Founder of Apple Inc.',
@@ -123,7 +123,7 @@ import {
     );
   }
   
-  export default function Testimonial() {
+  export default function TecHeroes() {
     return (
       <Flex
         textAlign={'center'}
@@ -131,23 +131,23 @@ import {
         justifyContent={'center'}
         direction={'column'}
         width={'full'}>
-        <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
+        <Box width={{ base: 'full' }} margin={'auto'}>
           <chakra.h2
             className='font-cyberpunk'
             fontWeight={'bold'}
-            fontSize={"76px"}
+            fontSize={{ base: "5xl", lg: "7xl" }}
             textTransform={'uppercase'}
             letterSpacing={"5px"}
             color={'purple.400'}>
-            My Tech Hereos
+            My Tech Heroes
           </chakra.h2>
         </Box>
         <SimpleGrid
           columns={{ base: 1, xl: 2 }}
           spacing={'20'}
           mt={16}
-          mx={'auto'}>
-          {testimonials.map((cardInfo, index) => (
+          mx={'15px'}>
+          {techeroes.map((cardInfo, index) => (
             <TestimonialCard {...cardInfo} index={index} />
           ))}
         </SimpleGrid>

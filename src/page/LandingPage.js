@@ -11,7 +11,7 @@ import { Button, useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import EyesFollow from "../plugins/MightyMouse";
 import Astronaut from "../images/astronaut.png";
-import Testimonial from "../components/Testimonial";
+import TecHeroes from "../components/TecHeroes";
 import Contact from "../components/Contact";
 
 const LandingPage = () => {
@@ -116,8 +116,8 @@ const LandingPage = () => {
             {value}
           </Text>
           <Hero value={value} />
+          <TecHeroes/>
           <Projects />
-          <Testimonial/>
           <Contact/>
           <AnimateCursor />
           <Box position={"absolute"} zIndex={"-1"}>

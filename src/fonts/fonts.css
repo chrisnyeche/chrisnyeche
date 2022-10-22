@@ -58,6 +58,23 @@
   src: url("./deathstar/Death-Star.otf");
 }
 
+/* Mine Crafter */
+@font-face {
+  font-family: "Minecrafter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./minecrafter/Minecrafter.Alt.ttf");
+}
+
+/* Varino */
+@font-face {
+  font-family: "Varino";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./varino/Varino-normal.otf");
+}
 
 .font-gordita {
   font-family: GorditaBlack;
@@ -97,5 +114,13 @@
 
 .font-deathstar{
   font-family: Deathstar;
+}
+
+.font-minecrafter{
+  font-family: Minecrafter;
+}
+
+.font-varino{
+  font-family: Varino;
 }
 

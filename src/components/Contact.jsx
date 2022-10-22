@@ -4,7 +4,6 @@ import {
     Flex,
     FormControl,
     FormLabel,
-    Heading,
     IconButton,
     Input,
     InputGroup,
@@ -60,10 +59,7 @@ import {
               <Text
               as="h3"
               className='font-cyberpunk'
-                fontSize={{
-                  base: '4xl',
-                  md: '7xl',
-                }}>
+              fontSize={{ base: "5xl", lg: "7xl" }}>
                 Get in Touch
               </Text>
   
@@ -143,7 +139,7 @@ import {
                   p={8}
                   color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                   shadow="base"
-                  w={"700px"}>
+                  w={{base: "300px", md:"500px", lg: "700px"}}>
                   <VStack spacing={5}>
                     <FormControl isRequired>
                       <FormLabel>Name</FormLabel>

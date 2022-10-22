@@ -38,10 +38,13 @@ const MainArea = () => {
     return (
       <Box className="main-area">
         <Box className="blog-post">
-          <Text as="h2" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={{base: "28px", md: "34px"}} textAlign={"center"}>
+          <Text as="h2" className={"font-spaceranger__Gradient"} fontWeight="extrabold" lineHeight={"10"} fontSize={{base: "28px", md: "43px"}} textAlign={"center"}>
             Good {timeOfDay}
           </Text>
-          <Text as="h3" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={{ base: "16px", md: "20px" }} my={3}>
+          <Text as="h3" className={"font-varino"} fontWeight="extrabold" lineHeight={"10"} fontSize={{ base: "16px", md: "20px" }} my={3} textAlign={"center"}>
+            SIMPLE REACT FLIP QUIZ
+          </Text>
+          <Text className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={{ base: "16px", md: "20px" }} my={3}>
             Which of the following is not a default REACT hook?
           </Text>
         </Box>
@@ -89,14 +92,14 @@ class BlogCard extends Component {
 
         {/* Back Flipcard */}
         <Box className="back">
-          <Box w={{ base: "100%", lg: "70%" }} mx="auto">
+          <Box w={{ base: "100%", lg: "60%" }} mx="auto">
             <Player autoplay loop src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json" />
           </Box>
-          <Text as="h2" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={"34px"} textAlign={"center"}>
+          <Text as="h2" className={"font-varino"} fontWeight="extrabold" lineHeight={"10"} fontSize={"34px"} textAlign={"center"}>
             RIDDLE
           </Text>
           <Text as="h3" className={"font-recoleta"} fontWeight="extrabold" lineHeight={"10"} fontSize={{ base: "16px", md: "20px" }} my={3}>
-            I am something people love or hate. I change people’s appearances and thoughts. Some people might want to try and hide me, but I will show. No matter how hard people try, I will never go down. What am I?
+            I am something people love or hate. I change people’s thoughts.  No matter how hard people try, I will never go down. What am I?
           </Text>
           <Center>
             <HStack flexDirection={{ base: "column", md: "row" }} gap={2}>

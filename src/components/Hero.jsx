@@ -44,7 +44,7 @@ const Hero = (props) => {
       {/* Hero Profile */}
       <Box className="font-bosch" padding={"10px"} w={{ base: "100%", md: "90%", lg: "50%" }} h={{ base: "100%" }} pt={10} backgroundColor={{ lg: "transparent", base: "rgba(112, 71, 235, .15)" }} borderRadius={"20px"}>
         {/* Profile picture */}
-        <Image src={"https://avatars.githubusercontent.com/u/91467592?v=4"} alt={"Chris Nyeche"} width={"20rem"} rounded="full" mx="auto" />
+        <Image src={"https://avatars.githubusercontent.com/u/91467592?v=4"} alt={"Chris Nyeche"} width={"20rem"} rounded="full" mx="auto" className="floating" />
         {/* About */}
         <Box textAlign={"center"} mx="auto">
           {/* Animated Text */}
