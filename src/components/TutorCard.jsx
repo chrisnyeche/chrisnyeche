@@ -1,4 +1,7 @@
 import { Heading, Avatar, Box, Image, Flex, Text, Stack, Button } from "@chakra-ui/react";
+import Cristina from "../images/Cristina.png"
+import Braide from "../images/Braide.jfif"
+import Rand from "../images/Rand.jfif"
 
 export default function TutorCard() {
   const Tutors = [
@@ -18,22 +21,22 @@ export default function TutorCard() {
     },
     {
       CoverImage: "https://uploads.sitepoint.com/wp-content/uploads/2017/01/1483422029image03.gif",
-      avatar: "https://media-exp1.licdn.com/dms/image/C4E0DAQFf8wG-Ck50DQ/learning-author-crop_200_200/0/1643745358734?e=1666972800&v=beta&t=ZvuJvGLEWvO38-CRV1hcx9aveLrsQBwlzNnWtc4J9LQ",
+      avatar: Cristina,
       name: "Christina Truong",
       description: "Front-End Developer",
       connect: "",
     },
     {
       CoverImage: "https://miro.medium.com/max/1200/1*3uQwzB8W3XWdgW4Mjuc9yg.gif",
-      avatar: "https://media-exp1.licdn.com/dms/image/C4D03AQE8HYZHfkKnpw/profile-displayphoto-shrink_800_800/0/1654512714303?e=1671667200&v=beta&t=It8X9_neH2CphR-LGHfPFsNG0NbO5kOaUtP3dpAhYfI",
+      avatar: Braide,
       name: "Braide Shekinah",
       description: "UI/UX Engineer",
       connect: "",
     },
     {
       CoverImage: "https://media3.giphy.com/media/L8K62iTDkzGX6/giphy.gif",
-      avatar: "https://media-exp1.licdn.com/dms/image/C560DAQGQQYA5mAktCw/learning-author-crop_200_200/0/1576191276160?e=1666962000&v=beta&t=1fy_3sYnP_I8ntGelmC88BUvjJODZM0KP9hFE3B5jCY",
-      name: "M. Rand-Hendriksen",
+      avatar: Rand,
+      name: "M. R.-Hendriksen",
       description: "Web Designer",
       connect: "",
     },

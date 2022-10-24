@@ -118,6 +118,7 @@ import {
           width={'80px'}
           alignSelf={'center'}
           m={{ base: '0 0 35px 0', md: '0 0 0 50px' }}
+          _hover={{src: "https://media-exp1.licdn.com/dms/image/C560DAQGQQYA5mAktCw/learning-author-crop_200_200/0/1576191276160?e=1666962000&v=beta&t=1fy_3sYnP_I8ntGelmC88BUvjJODZM0KP9hFE3B5jCY"}}
         />
       </Flex>
     );
