@@ -129,9 +129,10 @@ import {
         textAlign={'center'}
         pt={10}
         justifyContent={'center'}
+        alignItems={'center'}
         direction={'column'}
         width={'full'}>
-        <Box width={{ base: 'full' }} margin={'auto'}>
+        <Box width={{ base: 'full' }}>
           <chakra.h2
             className='font-cyberpunk'
             fontWeight={'bold'}

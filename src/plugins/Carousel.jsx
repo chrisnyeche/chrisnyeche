@@ -43,7 +43,7 @@ const Carousel = () => {
   // Carousel settings
 
   return (
-    <Box className='border border-danger'>
+    <Box>
       {/* Carousel */}
       <Box>
         <Slider {...settings1} gap={5}>

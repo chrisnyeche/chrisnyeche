@@ -21,6 +21,33 @@ const Connect = () => {
   setTimeout(() => {
     setLoader(true);
   }, 3000);
+
+  const Biography = [
+    {
+      tag: "Name:",
+      answer: "Chris Nmasichi F. Nyeche",
+    },
+    {
+      tag: "Location:",
+      answer: "Port Harcourt, Nigeria",
+    },
+    {
+      tag: "Style Of Work:",
+      answer: "Remote/Freelance/Hybrid",
+    },
+    {
+      tag: "Stack:",
+      answer: "Web 3.0 Front-End Developer",
+    },
+    {
+      tag: "Code Base:",
+      answer: "Web/Mobile.",
+    },
+    {
+      tag: "Professional Skills:",
+      answer: " Communication, Public Speaking, Teamwork, Time Management, Leadership",
+    },
+  ];
   return (
     <Box>
       {!loader ? (
@@ -28,25 +55,48 @@ const Connect = () => {
       ) : (
         <Box as="main">
           {/* Tech Stack */}
-          <Flex justifyContent={"center"} mx="auto" position={"relative"} my={"20px"} textAlign="center">
+          <Flex justifyContent={"center"} mx="auto" my={"20px"} textAlign="center" position={"relative"}>
             <Text as={"h2"} className="flick font-cyberpunk" data-heading="MY TECH STACK" w={"100%"} fontSize={{ base: "5xl", lg: "7xl" }}></Text>
           </Flex>
 
-            {/* Vr animation */}
-            <Center w={{ base: "100%", lg: "60%" }} mx="auto">
-              <Player autoplay loop src={"https://assets6.lottiefiles.com/packages/lf20_p8xzlbof.json"} />
-            </Center>
+          {/* Vr animation */}
+          <Center w={{ base: "100%", lg: "60%" }} mx="auto">
+            <Player autoplay loop src={"https://assets6.lottiefiles.com/packages/lf20_p8xzlbof.json"} />
+          </Center>
 
           {/* Stacks */}
-          <Box as="se" mt="10px">
+          <Box mt="10px">
             <Carousel />
           </Box>
 
+          {/* About Me */}
+          <Box as={"section"} display={"flex"} h="50vh" flexDirection={{ base: "column", lg: "row-reverse" }} padding={{ base: 3, md: 5 }} justifyContent={"space-between"} mt={5} gap={5} alignItems={"center"} backgroundColor={{ base: "transparent", lg: "rgba(112, 71, 235, .15)" }} backdropFilter={"blur(5px)"} boxShadow={{ base: "none", lg: "10px 20px rgba(112, 71, 235, .5)" }} borderRadius={"20px"} m={{ base: "1", md: "10" }}>
+            {/* Biography */}
+            <Box w={{ base: "100%", lg: "60%" }}>
+              <Text as={"h2"} fontSize={"40px"} className={"font-cyberpunk"}>
+                ABOUT ME
+              </Text>
+              {Biography.map((bio) => {
+                return (
+                  <Text fontSize={"20px"} className={"font-recoleta"}>
+                    {bio.tag} <Text as="span"> {bio.answer} </Text>
+                  </Text>
+                );
+              })}
+            </Box>
 
-          <Contact />
+            {/* Tech Laptop */}
+          <Box w={{ base: "100%", lg: "40%" }} display={{base: "none", lg: "block"}}>
+              <Box w={"100%"}>
+                <Player autoplay loop src={"https://assets8.lottiefiles.com/packages/lf20_lqbx9x0z.json"} />
+              </Box>
+            </Box>
+          </Box>
 
-         {/* Sun & Moon */}
-         <Center my={2} className="fixed-top">
+            <Contact />
+
+          {/* Sun & Moon */}
+          <Center my={2} className="fixed-top">
             <Button onClick={toggleColorMode} className={"floating"} rounded="full">
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>

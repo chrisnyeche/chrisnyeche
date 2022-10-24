@@ -23,7 +23,7 @@ export default class ProSlider extends Component {
         autoplay: true,
         speed: 500,
         // autoplaySpeed: 1000,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
@@ -52,7 +52,7 @@ export default class ProSlider extends Component {
         ],
       };
     return (
-      <Box mb={"106px"}>
+      <Box mb={"106px"} ms={{lg: 3}}>
         <Text my={"5"} as={"h2"} className="font-cyberpunk" fontSize={{ base: "5xl", lg: "7xl" }}>MY PROJECTS</Text>
         <Box overflow={"hidden"}>
         <Slider ref={c => (this.slider = c)} {...settings} gap={3}>
