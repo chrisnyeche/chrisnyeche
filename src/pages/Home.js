@@ -1,24 +1,16 @@
-import { Input, Flex, Box, Center, FormControl, FormLabel, FormHelperText, FormErrorMessage, Text, Image } from "@chakra-ui/react";
-import { useState } from "react";
-import Particle from "../plugins/Particle";
-import Hero from "../components/Hero";
-import AnimateCursor from "../plugins/AnimateCursor";
-import Type from "../plugins/Type";
-// import Loading from "../plugins/Loading";
-import Projects from "../components/Projects";
+import { Box, Center, Button, Flex, FormControl, FormErrorMessage, FormHelperText, FormLabel, Image, Input, Text } from "@chakra-ui/react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { Button, useColorMode } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { useState } from "react";
+import AnimateCursor from "../plugins/AnimateCursor";
 import EyesFollow from "../plugins/MightyMouse";
+import Particle from "../plugins/Particle";
+import Type from "../plugins/Type";
 import Astronaut from "../images/astronaut.png";
-import TecHeroes from "../components/TecHeroes";
-import Contact from "../components/Contact";
+import Create from "./Create";
 
-const LandingPage = () => {
+const Home = () => {
   // Loader state
   const [loader, setLoader] = useState(false);
-  // Color mode
-  const { colorMode, toggleColorMode } = useColorMode();
   // Question
   const [value, setValue] = useState("");
   // Loading display
@@ -38,14 +30,12 @@ const LandingPage = () => {
       ? setLoader(false)
       : setTimeout(() => {
           setDisplay("block");
-          setEmoji("Loading... 😀")
+          setEmoji("Loading... 😀");
         }, 500) &&
         setTimeout(() => {
           setLoader(true) && setDisplay("block");
         }, 3000);
-        
   };
-
   return (
     <Box as={"main"}>
       {!loader ? (
@@ -73,7 +63,9 @@ const LandingPage = () => {
                 <FormErrorMessage>Name is required.</FormErrorMessage>
               )}
             </FormControl>
-            <Button onClick={handleClick} my={2}>{emoji}</Button>
+            <Button onClick={handleClick} my={2}>
+              {emoji}
+            </Button>
           </Box>
           <AnimateCursor />
           {/* Floating Planets */}
@@ -102,31 +94,10 @@ const LandingPage = () => {
           </Box>
         </Flex>
       ) : (
-        <Box position={"relative"} textAlign={"center"}>
-          {/* Sun & Moon */}
-          <Center my={2} className="fixed-top">
-            <Button onClick={toggleColorMode} className={"floating"} rounded="full">
-              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-            </Button>
-          </Center>
-          <Text className="shimmer font-cyberpunk" fontSize={{ base: "2.5em", md: "4rem" }}>
-            WELCOME TO MY WORLD
-          </Text>
-          <Text className="shimmer font-spaceranger__3d" fontSize={{ base: "1.5em", md: "2rem" }} textTransform={"uppercase"}>
-            {value}
-          </Text>
-          <Hero value={value} />
-          <TecHeroes/>
-          <Projects />
-          <Contact/>
-          <AnimateCursor />
-          <Box position={"absolute"} zIndex={"-1"}>
-            <Particle />
-          </Box>
-        </Box>
+        <Create value={value}/>
       )}
     </Box>
   );
 };
 
-export default LandingPage;
+export default Home;

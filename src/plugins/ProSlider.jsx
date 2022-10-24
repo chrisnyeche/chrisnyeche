@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "./ProSlider.css"
 
@@ -52,8 +52,8 @@ export default class ProSlider extends Component {
         ],
       };
     return (
-      <Box>
-        <Text as={"h2"} className="font-cyberpunk" fontSize={{ base: "5xl", lg: "7xl" }}>MY PROJECTS</Text>
+      <Box mb={"106px"}>
+        <Text my={"5"} as={"h2"} className="font-cyberpunk" fontSize={{ base: "5xl", lg: "7xl" }}>MY PROJECTS</Text>
         <Box overflow={"hidden"}>
         <Slider ref={c => (this.slider = c)} {...settings} gap={3}>
           {/* Wordpress */}
@@ -212,14 +212,15 @@ export default class ProSlider extends Component {
           </Box>
         </Slider>
         </Box>
-        <div style={{ textAlign: "center" }}>
-          <button className="button" onClick={this.previous}>
+        {/* Next & Previous Buttons */}
+        <Box textAlign={"center"} mt={7} mb={9}>
+          <Button  onClick={this.previous} mx={4}>
             Previous
-          </button>
-          <button className="button" onClick={this.next}>
+          </Button>
+          <Button  onClick={this.next}>
             Next
-          </button>
-        </div>
+          </Button>
+        </Box>
       </Box>
     );
     }} 

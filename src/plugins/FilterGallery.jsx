@@ -55,7 +55,7 @@ const Cards = ({imgs}) =>
       </li>)}
   </ul>
 
-class App extends Component{
+export default class FilteGallery extends Component{
   state ={
     imgs, 
     filters,
@@ -111,7 +111,7 @@ class App extends Component{
     
     imgs.forEach((img, imgKey) => { 
       filters.forEach((filter, filterKey)=> {  
-        if((img.tag==filter.name)&&(filter.status==true)){
+        if((img.tag===filter.name)&&(filter.status===true)){
           newImgs[a] = img;
           a++;
         }

@@ -40,7 +40,7 @@ export default function TutorCard() {
   ];
   return (
     <Box>
-      <Text as={"h2"} className={"font-cyberpunk"} fontSize={{ base: "5xl", lg: "7xl" }}>
+      <Text as={"h2"} className={"font-cyberpunk"} fontSize={{ base: "5xl", lg: "7xl" }} textAlign={"center"}>
         MY TUTORS
       </Text>
       <Flex p={6} w="100%" justifyContent={"center"} alignItems={"center"} flexDirection={{ base: "column", lg: "row" }}>

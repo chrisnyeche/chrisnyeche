@@ -31,7 +31,7 @@ const Hero = (props) => {
       backgroundColor: "#25D366",
     },
   ];
-  const values = ["Creativity", "Humility", "Responsibility", "Innovative", "Simplicity"];
+  const values = ["Creativity", "Humility", "Responsibility", "Innovativity", "Simplicity"];
 
   return (
     <Box as={"section"} display={"flex"} h="fit-content" flexDirection={{ base: "column", lg: "row-reverse" }} padding={{base: 3, md: 5}} justifyContent={"space-between"} mt={5} gap={5} alignItems={"center"} backgroundColor={{ base: "transparent", lg: "rgba(112, 71, 235, .15)" }} backdropFilter={"blur(5px)"} boxShadow={{ base: "none", lg: "10px 20px rgba(112, 71, 235, .5)" }} borderRadius={"20px"} m={{ base: "1", md: "10" }}>
