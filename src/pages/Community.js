@@ -6,7 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 // Images
-import ArtGal from "../images/artgal.jpg"
+import ArtGal from "../images/artgal.jpg";
 
 // Page Graphics
 import AnimateCursor from "../plugins/AnimateCursor";
@@ -17,7 +17,7 @@ import PageLoader from "../components/PageLoader";
 // Components
 import TutorCard from "../components/TutorCard";
 
-import CryptoCity from "../plugins/cyrpto-city.json"
+import CryptoCity from "../plugins/cyrpto-city.json";
 
 const Community = () => {
   // Color mode
@@ -94,7 +94,9 @@ const Community = () => {
         <Box>
           {/* Tech Stack */}
           <Flex justifyContent={"center"} mx="auto" my={"20px"} textAlign="center" position={"relative"}>
-            <Text as={"h2"} className="font-cyberpunk" w={"100%"} fontSize={{ base: "5xl", lg: "8xl" }}>WEB COMMUNITY</Text>
+            <Text as={"h2"} className="font-cyberpunk" w={"100%"} fontSize={{ base: "5xl", lg: "8xl" }}>
+              WEB COMMUNITY
+            </Text>
           </Flex>
 
           <Box position={"relative"}>
@@ -104,10 +106,9 @@ const Community = () => {
             </Center>
 
             {/* Avatars */}
-
             {AvatarCard.map((avatar) => {
               return (
-                <Box position={"absolute"} top={avatar.firstposition} left={avatar.secondposition} className={"floating"} display={{base: "none", lg: "block"}}>
+                <Box position={"absolute"} top={avatar.firstposition} left={avatar.secondposition} className={"floating"} display={{ base: "none", lg: "block" }}>
                   <Avatar
                     size={"xl"}
                     src={avatar.src}
@@ -120,8 +121,11 @@ const Community = () => {
               );
             })}
           </Box>
+
           {/* Tutor Card */}
-          <TutorCard />
+          <Box my={9}>
+            <TutorCard />
+          </Box>
 
           {/* Sun & Moon */}
           <Center my={2} className="fixed-top">

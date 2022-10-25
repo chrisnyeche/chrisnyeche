@@ -50,7 +50,7 @@ const Home = () => {
             {/* Name Form */}
             <FormControl isInvalid={isError}>
               <FormLabel>Before you access this portfolio. Please What is your Name?</FormLabel>
-              <Input type="email" value={value} onChange={handleChange} placeholder="Input your name" />
+              <Input type="text" value={value} onChange={handleChange} placeholder="Input your name" />
               {!isError ? (
                 <FormHelperText>
                   Thank you{" "}

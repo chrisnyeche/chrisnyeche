@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Center, Text, useColorMode, Button, Flex } from "@chakra-ui/react";
-import Carousel from "../plugins/Carousel";
 import Contact from "../components/Contact";
+import Carousel from "../plugins/Carousel";
 
 // Icons
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";

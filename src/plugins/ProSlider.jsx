@@ -214,10 +214,10 @@ export default class ProSlider extends Component {
         </Box>
         {/* Next & Previous Buttons */}
         <Box textAlign={"center"} mt={7} mb={9}>
-          <Button  onClick={this.previous} mx={4}>
+          <Button className={"glow-on-hover font-varino"}  onClick={this.previous} mx={4}>
             Previous
           </Button>
-          <Button  onClick={this.next}>
+          <Button className={"glow-on-hover font-varino"}  onClick={this.next}>
             Next
           </Button>
         </Box>
