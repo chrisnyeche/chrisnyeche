@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Box, Center, Text, Button, useColorMode } from "@chakra-ui/react";
 
 // Icons
@@ -18,6 +18,7 @@ import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
 
 const Create = ({ value }) => {
+  const [visitor, setVisitor] = useState(value)
   // Color mode
   const { colorMode, toggleColorMode } = useColorMode();
   // Loader state
@@ -25,6 +26,13 @@ const Create = ({ value }) => {
   setTimeout(() => {
     setLoader(true);
   }, 3000);
+
+  // Getting the Visitors name
+  useEffect(() => {
+  const Visitor = window.localStorage.getItem('visitors_name')
+  setVisitor(Visitor)
+  }, [])
+  
   return (
     <Box>
       {!loader ? (
@@ -35,7 +43,7 @@ const Create = ({ value }) => {
             WELCOME TO MY WORLD
           </Text>
           <Text className="shimmer font-spaceranger__3d" fontSize={{ base: "1.5em", md: "2rem" }} textTransform={"uppercase"}>
-            {value}
+            {visitor}
           </Text>
           <Hero value={value} />
           <TecHeroes />

@@ -1,3 +1,24 @@
+### :man_technologist: PERSONAL PORTFOLIO :
+
+## PAGES
+The portfolio is divided into four pages.
+1. Home: The Home page is were the loading page exists. This is were the Loader page and the nusers are asked to input thier names before they can be able to access the portfolio. The value of the user is usesd in the Home page and the create page. The Home page consists of the four plugins and four images.
+
+2. Create: The Create page is the first page of the main portfolio view. It contains the hero section, tech heroes and project section.
+
+
+3. Connect
+4. Community
+
+
+
+
+
+
+
+
+
+
 https://openbase.com/categories/js/best-react-scroll-libraries
 
 https://www.cdnfonts.com/

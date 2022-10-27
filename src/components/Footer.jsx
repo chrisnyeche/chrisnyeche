@@ -12,6 +12,7 @@ const Footer = () => {
   return (
     <Box bg={"transparent"} className="fixed-bottom" mb={3} >
       <Stack direction={"row"} spacing={6} bg={"ActiveCaption"} zIndex={"-1"} borderRadius={"20px"} py={5} w={{ base: "93%", lg: "40%" }} display={"flex"} justifyContent="center" mx="auto" className="font-pilotcommand" fontSize={{ base: "13px", md: "xl", lg: "2xl" }} color={"#7047EB"}>
+
         {FooterLinks.map((links) => {
           return (
             <Link to={links.path}>

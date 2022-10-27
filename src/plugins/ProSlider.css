@@ -178,7 +178,7 @@ figure.effect-julia:hover p {
 /*-----------------*/
 
 figure.effect-goliath {
-  background: #df4e4e;
+  background: #4eaadf;
 }
 
 figure.effect-goliath img,
@@ -1211,7 +1211,7 @@ figure.effect-lexi:hover p {
 
 figure.effect-duke {
   background: -webkit-linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
-  background: linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
+  background: linear-gradient(-45deg, #34495e 0%, #5755cc 100%);
 }
 
 figure.effect-duke img,

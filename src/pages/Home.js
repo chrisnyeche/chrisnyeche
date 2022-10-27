@@ -1,6 +1,6 @@
 import { Box, Center, Button, Flex, FormControl, FormErrorMessage, FormHelperText, FormLabel, Image, Input, Text } from "@chakra-ui/react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnimateCursor from "../plugins/AnimateCursor";
 import EyesFollow from "../plugins/MightyMouse";
 import Particle from "../plugins/Particle";
@@ -25,6 +25,12 @@ const Home = () => {
     setValue(event.target.value);
   };
 
+  const handleEnter = (e) => {
+    if (e.key === "Enter") {
+        handleClick()
+    }
+}
+
   const handleClick = () => {
     value === ""
       ? setLoader(false)
@@ -36,6 +42,13 @@ const Home = () => {
           setLoader(true) && setDisplay("block");
         }, 3000);
   };
+
+  // Storing the Visitors name
+  useEffect(() => {
+  window.localStorage.setItem('visitors_name', value)
+  // If it is an Object instead of a string use JSON.strignify to convert to string
+  }, [value])
+  
   return (
     <Box as={"main"}>
       {!loader ? (
@@ -50,7 +63,7 @@ const Home = () => {
             {/* Name Form */}
             <FormControl isInvalid={isError}>
               <FormLabel>Before you access this portfolio. Please What is your Name?</FormLabel>
-              <Input type="text" value={value} onChange={handleChange} placeholder="Input your name" />
+              <Input type="text" value={value} onChange={handleChange} placeholder="Input your name" onKeyUp={handleEnter} />
               {!isError ? (
                 <FormHelperText>
                   Thank you{" "}
@@ -84,7 +97,7 @@ const Home = () => {
           <Box position={"absolute"} right={{ base: "40px" }} top={"20px"} w={"40"} display={{ base: "none", lg: "block" }}>
             <Player autoplay loop src={"https://assets10.lottiefiles.com/packages/lf20_l4ny0jjm.json"} />
           </Box>
-          {/* Loading Mode */}
+          {/* Loading Astronaut */}
           <Box position={"absolute"} right={"1px"} bottom={"1px"} display={display} w={"40"}>
             <Player autoplay loop src={"https://assets10.lottiefiles.com/packages/lf20_ypej3gd9.json"} />
           </Box>

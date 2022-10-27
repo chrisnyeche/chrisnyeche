@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Box, Button, Icon, Link, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "./ProSlider.css"
+import {FaPlayCircle} from "react-icons/fa"
 
 
 export default class ProSlider extends Component {
@@ -56,157 +57,140 @@ export default class ProSlider extends Component {
         <Text my={"5"} as={"h2"} className="font-cyberpunk" fontSize={{ base: "5xl", lg: "7xl" }}>MY PROJECTS</Text>
         <Box overflow={"hidden"}>
         <Slider ref={c => (this.slider = c)} {...settings} gap={3}>
-          {/* Wordpress */}
+          {/* Designopers */}
           <Box key={1} px={{base: "30px", lg:"0px"}}>
               <figure class="effect-julia">
                 <img src={"https://www.nftsstreet.com/wp-content/uploads/2022/01/Webp.net-gifmaker.gif"} alt="img22" />
                 <figcaption>
                   <h2>
-                    Passionate <span>Julia</span>
+                   <span>Designopers</span>
                   </h2>
                   <div>
-                    <p>Julia dances in the deep dark</p>
-                    <p>She loves the smell of the ocean</p>
-                    <p>And dives into the morning light</p>
+                    <p>A commuinity of designers and developers</p>
                   </div>
-                  <a href="./">View more</a>
+                  <a target={"blank"} href="https://designopers.netlify.app/">View more</a>
                 </figcaption>
               </figure>
           </Box>
-          {/* React */}
+          {/* Umake */}
           <Box key={2} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-goliath">
             <img src={"https://nftartwork.co.uk/wp-content/uploads/2021/08/Mike-Tyson.gif"} alt="img23" />
             <figcaption>
               <h2>
-                Thoughtful <span>Goliath</span>
+               <span>UMAKE</span>
               </h2>
-              <p>When Goliath comes out, you should run.</p>
-              <a href="./">View more</a>
+              <p>Design in 3D. Publish Anywhere.</p>
+              <a target={"blank"} href="https://chrisnyeche.github.io/umake/">View more</a>
             </figcaption>
           </figure>
           </Box>
-          {/* Next Js */}
+          {/* Splash Music */}
           <Box key={3} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-apollo">
             <img src={"https://dls.so/mint/img/avatar.gif"} alt="img18" />
             <figcaption>
               <h2>
-                Strong <span>Apollo</span>
+                Splash <span>Music</span>
               </h2>
-              <p>Apollo's last game of pool was so strange.</p>
-              <a href="./">View more</a>
+              <p>The Music Application.</p>
+              <a target={"blank"} href="https://splashmusic.netlify.app/">View more</a>
             </figcaption>
           </figure>
           </Box>
-          {/* Javascript */}
+          {/* GateHouse */}
           <Box key={4} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-duke">
             <img src="https://cdn.dribbble.com/users/1382369/screenshots/17876859/media/f3686481b564dd299418692bc8384caf.gif" alt="img03" />
             <figcaption>
               <h2>
-                Plain <span>Phoebe</span>
+                Gate <span>House</span>
               </h2>
               <p>
-                <a href="./">
-                  <i class="fa fa-fw fa-user"></i>
-                </a>
-                <a href="./">
-                  <i class="fa fa-fw fa-heart"></i>
-                </a>
-                <a href="./">
-                  <i class="fa fa-fw fa-cog"></i>
-                </a>
+                <Link target={"blank"} href="https://gatehouse.idea.cinfores.com/" _hover={{color: "white"}}>
+                <Text> A Visitor tracking app</Text>
+                </Link>
               </p>
             </figcaption>
           </figure>
           </Box>
-          {/* Chakra */}
+          {/* Netflix */}
           <Box key={5} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-terry">
             <img src="https://airnfts.s3.amazonaws.com/profile-images/20220221/0xbbC213d442cDe37138b4383565D44dB3F4F79aff_1645477060045.gif" alt="img16" />
             <figcaption>
               <h2>
-                Noisy <span>Terry</span>
+                <Text as={"span"} color="red">NETFLIX</Text>
               </h2>
               <p>
                 <a href="./">
-                  <i class="fa fa-fw fa-download"></i>
+                  P
                 </a>
                 <a href="./">
-                  <i class="fa fa-fw fa-heart"></i>
+                <Icon as={FaPlayCircle} color={"red"}/>
                 </a>
                 <a href="./">
-                  <i class="fa fa-fw fa-share"></i>
+                A
                 </a>
                 <a href="./">
-                  <i class="fa fa-fw fa-tags"></i>
+                Y
                 </a>
               </p>
             </figcaption>
           </figure>
           </Box>
-          {/* Bootstrap */}
+          {/* Lemon Squeezy */}
           <Box key={6} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-kira">
             <img src="https://cdn.shopify.com/s/files/1/0605/4998/8564/products/4_b3eb1e16-871c-4475-b702-93de6ae23e28_2048x2048.jpg?v=1647414907" alt="img17" />
             <figcaption>
-              <h2>
-                Dark <span>Kira</span>
-              </h2>
+              <Text as={"h2"} color="black">
+                Lemon <span>Squeezy</span>
+              </Text>
               <p>
-                <a href="./">
-                  <i class="fa fa-fw fa-home"></i>
-                </a>
-                <a href="./">
-                  <i class="fa fa-fw fa-download"></i>
-                </a>
-                <a href="./">
-                  <i class="fa fa-fw fa-heart"></i>
-                </a>
-                <a href="./">
-                  <i class="fa fa-fw fa-share"></i>
+                <a target={"blank"} href="https://lemonsqueezy.netlify.app">
+                 Sell Digital products
                 </a>
               </p>
             </figcaption>
           </figure>
           </Box>
-          {/* CSS */}
+          {/* Movie Hub */}
           <Box key={7} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-steve">
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/71a67a134500327.61d6d49b57b8f.gif" alt="img29" />
             <figcaption>
               <h2>
-                Lonely <span>Steve</span>
+                Movie <span>Hub</span>
               </h2>
-              <p>Steve was afraid of the Boogieman.</p>
-              <a href="./">View more</a>
+              <p>View your favourite movies.</p>
+              <a target={"blank"} href="https://chrisnyeche.github.io/movie_hub/">View more</a>
             </figcaption>
           </figure>
           </Box>
-          {/* Html */}
+          {/* Nanosite */}
           <Box key={8} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-moses">
             <img src="https://nftcalendar.io/storage/uploads/events/2022/3/cEk4iKfB2JVEj2OfwwPMBD8vuwYbcBdzwOduZXtU.gif" alt="img24" />
             <figcaption>
               <h2>
-                Cute <span>Moses</span>
+                Nano <span>Site</span>
               </h2>
-              <p>Moses loves to run after butterflies.</p>
-              <a href="./">View more</a>
+              <p>Bio site for creative minds.</p>
+              <a target={"blank"} href="https://nanosite.netlify.app/">View more</a>
             </figcaption>
           </figure>
           </Box>
-          {/* Figma */}
+          {/* Renaissance */}
           <Box key={9} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-jazz">
             <img src="https://rndmcharacters-s3.s3.amazonaws.com/InvisibleFriends-roadmap/KITH_web.gif" alt="img25" />
             <figcaption>
               <h2>
-                Dynamic <span>Jazz</span>
+                Renaissance <span>Ng</span>
               </h2>
-              <p>When Jazz starts to chase cars, the whole world stands still.</p>
-              <a href="./">View more</a>
+              <p>Re-Imagine Africa</p>
+              <a target={"blank"} href="https://renaissanceng.netlify.app/">View more</a>
             </figcaption>
           </figure>
           </Box>
