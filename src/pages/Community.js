@@ -11,6 +11,7 @@ import ArtGal from "../images/artgal.jpg";
 // Page Graphics
 import AnimateCursor from "../plugins/AnimateCursor";
 import Particle from "../plugins/Particle";
+import Team from "../plugins/Team";
 import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
 
@@ -125,6 +126,10 @@ const Community = () => {
           {/* Tutor Card */}
           <Box my={9}>
             <TutorCard />
+          </Box>
+
+          <Box my={9}>
+            <Team />
           </Box>
 
           {/* Sun & Moon */}
