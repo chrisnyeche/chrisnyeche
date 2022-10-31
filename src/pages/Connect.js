@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Center, Text, useColorMode, Button, Flex } from "@chakra-ui/react";
+import { Box, Center, Text, useColorMode, Button, Flex, Link } from "@chakra-ui/react";
 import Contact from "../components/Contact";
 import Carousel from "../plugins/Carousel";
 
@@ -12,6 +12,9 @@ import Particle from "../plugins/Particle";
 import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
 import { Player } from "@lottiefiles/react-lottie-player";
+
+// Resume
+import Resume from "../Resume.pdf"
 
 const Connect = () => {
   // Color mode
@@ -32,6 +35,10 @@ const Connect = () => {
       answer: "Port Harcourt, Nigeria",
     },
     {
+      tag: "Code Base:",
+      answer: "Web/Mobile.",
+    },
+    {
       tag: "Style Of Work:",
       answer: "Remote/Freelance/Hybrid",
     },
@@ -40,12 +47,12 @@ const Connect = () => {
       answer: "Web 3.0 Front-End Developer",
     },
     {
-      tag: "Code Base:",
-      answer: "Web/Mobile.",
+      tag: "Personal Skills:",
+      answer: " Communication, Public Speaking, Teamwork, Time Management, Leadership",
     },
     {
-      tag: "Professional Skills:",
-      answer: " Communication, Public Speaking, Teamwork, Time Management, Leadership",
+      tag: "Career Skills:",
+      answer: "Front-End Programming: HTML5, CSS3, AJAX, Wordpress Engineering, Verbal and Written Communication, Web Components Development, Bug Resolution, Project Scoping and Production Worm, Website Maintenance, End user training, User Research and Analysis.",
     },
   ];
   return (
@@ -70,7 +77,7 @@ const Connect = () => {
           </Box>
 
           {/* About Me */}
-          <Box as={"section"} display={"flex"} h="50vh" flexDirection={{ base: "column", lg: "row-reverse" }} padding={{ base: 3, md: 5 }} justifyContent={"space-between"} mt={5} gap={5} alignItems={"center"} backgroundColor={{ base: "transparent", lg: "rgba(112, 71, 235, .15)" }} backdropFilter={"blur(5px)"} boxShadow={{ base: "none", lg: "10px 20px rgba(112, 71, 235, .5)" }} borderRadius={"20px"} m={{ base: "1", md: "10" }}>
+          <Box as={"section"} display={"flex"} h="65vh" flexDirection={{ base: "column", lg: "row-reverse" }} padding={{ base: 3, md: 5 }} justifyContent={"space-between"} mt={5} gap={5} alignItems={"center"} backgroundColor={{ base: "transparent", lg: "rgba(112, 71, 235, .15)" }} backdropFilter={"blur(5px)"} boxShadow={{ base: "none", lg: "10px 20px rgba(112, 71, 235, .5)" }} borderRadius={"20px"} m={{ base: "1", md: "10" }}>
             {/* Biography */}
             <Box w={{ base: "100%", lg: "60%" }}>
               <Text as={"h2"} fontSize={"40px"} className={"font-cyberpunk"}>
@@ -78,11 +85,14 @@ const Connect = () => {
               </Text>
               {Biography.map((bio) => {
                 return (
-                  <Text fontSize={"20px"} className={"font-recoleta"}>
+                  <Text fontSize={{base: "16px", md: "18px", lg: "20px"}} className={"font-recoleta"}>
                     {bio.tag} <Text as="span"> {bio.answer} </Text>
                   </Text>
                 );
               })}
+              <Box my={3}>
+              <Link  href={Resume} download bg={"black"} p={2} borderRadius={"10px"} _hover={{textDecoration: "none", color: "white"}}> Download Resume</Link>
+              </Box>
             </Box>
 
             {/* Tech Laptop */}
