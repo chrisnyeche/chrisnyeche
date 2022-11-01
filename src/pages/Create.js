@@ -47,20 +47,24 @@ const Create = ({ value }) => {
           </Text>
           <Hero value={value} />
           <TecHeroes />
+          <Box mb={"80px"}>
           <ProSlider />
+          </Box>
 
-          {/* Sun & Moon */}
+           {/* ========= Components ============= */}
+          {/* Light & Dark Mode */}
           <Center my={2} className="fixed-top">
             <Button onClick={toggleColorMode} className={"floating"} rounded="full">
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Center>
-          <Footer />
           <AnimateCursor />
           {/* Particle */}
           <Box position={"absolute"} zIndex={"-1"}>
             <Particle />
           </Box>
+          {/* Footer */}
+          <Footer />
         </Box>
       )}
     </Box>

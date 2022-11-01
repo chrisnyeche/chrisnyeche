@@ -11,13 +11,14 @@ import ArtGal from "../images/artgal.jpg";
 // Page Graphics
 import AnimateCursor from "../plugins/AnimateCursor";
 import Particle from "../plugins/Particle";
-import Team from "../plugins/Team";
 import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
 
 // Components
 import TutorCard from "../components/TutorCard";
 
+// Plugins
+import TeamCard from "../plugins/Swiper";
 import CryptoCity from "../plugins/cyrpto-city.json";
 
 const Community = () => {
@@ -128,22 +129,35 @@ const Community = () => {
             <TutorCard />
           </Box>
 
-          <Box my={9}>
-            <Team />
-          </Box>
+          {/* Team Members Section  */}
+          <Text as={"h2"} className={"font-cyberpunk"} fontSize={{ base: "5xl", lg: "7xl" }} textAlign={"center"} mt={10} mb={5}>
+            MY TEAM
+          </Text>
+          <Flex flexDirection={{ md: "column", lg: "row" }} justifyContent={"center"} alignItems={"center"} pb={{lg: 10}} lassName={"border border-danger"}>
+            <Box w={{ base: "100%", lg: "50%" }} c>
+              <TeamCard />
+            </Box>
+            <Box w={{ base: "100%", lg: "50%" }} display={{ base: "none", md: "block" }}>
+              <Center w={{ base: "100%", lg: "80%" }} mx="auto">
+                <Player autoplay loop src={"https://assets3.lottiefiles.com/packages/lf20_fclga8fl.json"} />
+              </Center>
+            </Box>
+          </Flex>
 
-          {/* Sun & Moon */}
+          {/* ========= Components ============= */}
+          {/* Light & Dark Mode */}
           <Center my={2} className="fixed-top">
             <Button onClick={toggleColorMode} className={"floating"} rounded="full">
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Center>
-          <Footer />
           <AnimateCursor />
           {/* Particle */}
           <Box position={"absolute"} zIndex={"-1"}>
             <Particle />
           </Box>
+          {/* Footer */}
+          <Footer />
         </Box>
       )}
     </Box>

@@ -91,7 +91,7 @@ const Connect = () => {
                 );
               })}
               <Box my={3}>
-              <Link  href={Resume} download bg={"black"} p={2} borderRadius={"10px"} _hover={{textDecoration: "none", color: "white"}}> Download Resume</Link>
+              <Link  href={Resume} color="white" download bg={"black"} p={2} borderRadius={"10px"} _hover={{textDecoration: "none", color: "white", bg: "purple.700"}}> Download Resume</Link>
               </Box>
             </Box>
 
@@ -105,18 +105,21 @@ const Connect = () => {
 
             <Contact />
 
-          {/* Sun & Moon */}
+            
+          {/* ========= Components ============= */}
+          {/* Light & Dark Mode */}
           <Center my={2} className="fixed-top">
             <Button onClick={toggleColorMode} className={"floating"} rounded="full">
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Center>
-          <Footer />
           <AnimateCursor />
           {/* Particle */}
           <Box position={"absolute"} zIndex={"-1"}>
             <Particle />
           </Box>
+          {/* Footer */}
+          <Footer />
         </Box>
       )}
     </Box>

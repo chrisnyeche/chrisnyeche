@@ -13,6 +13,10 @@ import "aos/dist/aos.css";
 //import animate
 import "animate.css";
 
+// Swiper
+import "swiper/css";
+import "swiper/css/effect-cards";
+
 // ChakraProvider
 import { ChakraProvider } from "@chakra-ui/react";
 

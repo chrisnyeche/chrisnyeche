@@ -1,7 +1,7 @@
 import { Heading, Avatar, Box, Image, Flex, Text, Stack, Link, Center } from "@chakra-ui/react";
 import Cristina from "../images/Cristina.png"
-import Braide from "../images/Braide.jfif"
-import Rand from "../images/Rand.jfif"
+import Braide from "../images/Braide.jpg"
+import Rand from "../images/Rand.jpg"
 
 export default function TutorCard() {
   const Tutors = [
