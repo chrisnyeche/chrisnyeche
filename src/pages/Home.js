@@ -53,7 +53,7 @@ const Home = () => {
     <Box as={"main"}>
       {!loader ? (
         <Flex h="100vh" justifyContent={"center"} alignItems={"center"} flexDirection={{ base: "column" }} position={"relative"}>
-          <Center position={"absolute"} top={"10px"}>
+          <Center position={"absolute"} top={"10px"} display={{ base: "none", md: "block" }}>
             <EyesFollow />
           </Center>
           <Box mx="auto" px="3">
@@ -90,7 +90,7 @@ const Home = () => {
             <Player autoplay loop src={"https://assets5.lottiefiles.com/packages/lf20_dwmb4mrt.json"} />
           </Box>
           {/* Astronaut */}
-          <Box position={"absolute"} left={{ base: "10px", md: "50%" }} bottom={"20px"}>
+          <Box position={"absolute"} left={{ base: "10px", md: "50%" }} bottom={"20px"} display={{ base: "none", md: "block" }}>
             <Image src={Astronaut} className="floating" alt="Falling Astronaut" w={{ base: 20, md: 40 }} />
           </Box>
           {/* Web3 Astronaut */}

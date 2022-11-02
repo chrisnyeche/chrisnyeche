@@ -27,9 +27,30 @@
 
 /* Space Ranger */
 @import url("http://fonts.cdnfonts.com/css/space-ranger");
+@font-face {
+  font-family: "Space Ranger";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./spaceranger/spaceranger.ttf");
+}
+@font-face {
+  font-family: "Space Ranger 3D";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./spaceranger/spaceranger3d.ttf");
+}
 
 /* Pilot Command */
-@import url("http://fonts.cdnfonts.com/css/pilot-command");
+/* @import url("http://fonts.cdnfonts.com/css/pilot-command"); */
+@font-face {
+  font-family: "Pilot Command";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./pilotcommand/PilotCommand-qZWJ0.otf"), url("./pilotcommand/PilotCommand3D-DORA0.otf");
+}
 
 /* Cyberpunk */
 @font-face {
@@ -89,11 +110,12 @@
 }
 
 .font-spaceranger {
-  font-family: "Space Ranger", sans-serif;
+  /* font-family: "Space Ranger", sans-serif; */
+  font-family: "Space Ranger";
 }
 
 .font-spaceranger__3d {
-  font-family: "Space Ranger 3D", sans-serif;
+  font-family: "Space Ranger 3D";
 }
 
 .font-spaceranger__Gradient {
@@ -101,7 +123,8 @@
 }
 
 .font-pilotcommand {
-  font-family: 'Pilot Command', sans-serif;
+  /* font-family: 'Pilot Command', sans-serif;  */
+  font-family: 'Pilot Command';
 }
 
 .font-cyberpunk{
