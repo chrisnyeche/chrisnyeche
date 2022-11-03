@@ -15,7 +15,7 @@ const App = () => {
       <Route
         index
         element={
-          <Suspense fallback={<PageLoader/>}>
+          <Suspense fallback={<Home/>}>
             <Home />
           </Suspense>
         }
