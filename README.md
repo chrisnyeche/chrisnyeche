@@ -67,5 +67,5 @@
   
  
 ### PORTFOLIO:
-To see all the preview of my work, this is my [Portfolio](https://chris-nyeche.netlify.app/)
+To see all the preview of my work, this is my [Portfolio](https://chrisnyeche.netlify.app/)
 
