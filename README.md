@@ -60,7 +60,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chrisnyeche&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ### 🏫Freelance: As a freelancer, I also work with:
-  <a href="https://www.linkedin.com/in/chris-nyeche/">
+  <a href="https://www.upwork.com/freelancers/~01cf2897f6114a7394">
     <img src="https://img.shields.io/badge/UpWork-6FDA44?style=for-the-badge&logo=Upwork&logoColor=white" alt="Upwork Badge"/>
   </a>
   
