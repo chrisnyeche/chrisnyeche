@@ -26,7 +26,6 @@
 
 ### :man_technologist: About Me :
 - 😎 I'm a Frontend Developer && a Designoper => A Designer + Developer 😊😊😊
-- The CEO of [Chris Designx](https://github.com/chrisdesignx/)
 - 🔭 I’m currently working on building a team of designers and developers for solving international problems using tech.
 - 🌱 I am also personally building a React multipurpose template built with chakra ui, next js, firebase,etc., any developer can use to build projects easily. 
 - 👯 I’m looking to collaborate with tech gurus, 3D & 2D designers, top notch React developers, deep thinkers and people who are ready to learn.
