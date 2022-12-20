@@ -84,7 +84,7 @@ const Hero = (props) => {
           About Me
         </Text>
         <Text className="font-recoleta" fontSize={{base: "15px", md: "20px"}} lineHeight={"tall"} textAlign={{base: "justify", lg: "start"}}>
-          I am Christopher Nmasichi Favour Nyeche. I base in the city of Port Harcourt, Nigeria. &#128512; I started coding in 2019. I have built different websites, applications and I am currently the CEO of Chris Designx inc.
+          I am Christopher Nmasichi Favour Nyeche. I base in the city of Port Harcourt, Nigeria. &#128512; I code to save lives and build solutions. I have built different websites, applications and I am currently the CEO of Chris Designx inc.
         </Text>
         <Text as="h3" mt={5} fontWeight={"700"} fontSize={"24px"} display={{ base: "none", md: "block" }}>
           My Core Values are:
