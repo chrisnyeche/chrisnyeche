@@ -39,7 +39,7 @@ import {
       name: 'Ibifuro Asawo',
       role: 'C.E.O of Cinfores',
       content:
-        'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
+        'Trust is what you earn, you do not command trust! The moment you get that trust, you must also learn to keep it.,
       avatar: Ibifuro,
     },
   ];
