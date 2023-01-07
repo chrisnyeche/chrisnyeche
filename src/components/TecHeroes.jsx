@@ -39,7 +39,7 @@ import {
       name: 'Ibifuro Asawo',
       role: 'C.E.O of Cinfores',
       content:
-        'Trust is what you earn, you do not command trust! The moment you get that trust, you must also learn to keep it.,
+        'Trust is what you earn, you do not command trust! The moment you get that trust, you must also learn to keep it.',
       avatar: Ibifuro,
     },
   ];
