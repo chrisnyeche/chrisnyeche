@@ -63,12 +63,12 @@ export default class ProSlider extends Component {
                 <img src={"https://www.nftsstreet.com/wp-content/uploads/2022/01/Webp.net-gifmaker.gif"} alt="img22" />
                 <figcaption>
                   <h2>
-                   <span>Designopers</span>
+                   <span>WE PRINT WALLS</span>
                   </h2>
                   <div>
-                    <p>A commuinity of designers and developers</p>
+                    <p>A German Wall printing Company</p>
                   </div>
-                  <a target={"blank"} href="https://designopers.netlify.app/">View more</a>
+                  <a target={"blank"} href="https://weprintwalls.de/">View more</a>
                 </figcaption>
               </figure>
           </Box>
@@ -78,10 +78,10 @@ export default class ProSlider extends Component {
             <img src={"https://nftartwork.co.uk/wp-content/uploads/2021/08/Mike-Tyson.gif"} alt="img23" />
             <figcaption>
               <h2>
-               <span>UMAKE</span>
+               <span>DWH</span>
               </h2>
-              <p>Design in 3D. Publish Anywhere.</p>
-              <a target={"blank"} href="https://chrisnyeche.github.io/umake/">View more</a>
+              <p>Booking & Ecommerce.</p>
+              <a target={"blank"} href="dwh-warehandel.de">View more</a>
             </figcaption>
           </figure>
           </Box>
@@ -142,7 +142,7 @@ export default class ProSlider extends Component {
           {/* Lemon Squeezy */}
           <Box key={6} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-kira">
-            <img src="https://cdn.shopify.com/s/files/1/0605/4998/8564/products/4_b3eb1e16-871c-4475-b702-93de6ae23e28_2048x2048.jpg?v=1647414907" alt="img17" />
+            <img src="https://media.tenor.com/m_tKM2ApZu0AAAAC/%D0%BA%D0%BB%D0%B0%D1%81%D1%81-avatar.gif" alt="img17" />
             <figcaption>
               <Text as={"h2"} color="black">
                 Lemon <span>Squeezy</span>
@@ -177,7 +177,7 @@ export default class ProSlider extends Component {
                 Nano <span>Site</span>
               </h2>
               <p>Bio site for creative minds.</p>
-              <a target={"blank"} href="https://nanosite.netlify.app/">View more</a>
+              <a target={"blank"} href="https://nanosite.onrender.com/">View more</a>
             </figcaption>
           </figure>
           </Box>
@@ -190,7 +190,7 @@ export default class ProSlider extends Component {
                 Renaissance <span>Ng</span>
               </h2>
               <p>Re-Imagine Africa</p>
-              <a target={"blank"} href="https://renaissanceng.netlify.app/">View more</a>
+              <a target={"blank"} href="https://renaissanceng.onrender.com/">View more</a>
             </figcaption>
           </figure>
           </Box>
