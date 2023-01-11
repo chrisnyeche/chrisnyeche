@@ -181,16 +181,16 @@ export default class ProSlider extends Component {
             </figcaption>
           </figure>
           </Box>
-          {/* Renaissance */}
+          {/* Bluewaether */}
           <Box key={9} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-jazz">
             <img src="https://rndmcharacters-s3.s3.amazonaws.com/InvisibleFriends-roadmap/KITH_web.gif" alt="img25" />
             <figcaption>
               <h2>
-                Renaissance <span>Ng</span>
+                Blue Weather <span>App</span>
               </h2>
-              <p>Re-Imagine Africa</p>
-              <a target={"blank"} href="https://renaissanceng.onrender.com/">View more</a>
+              <p>View weather condition</p>
+              <a target={"blank"} href="https://blueweather.onrender.com/">View more</a>
             </figcaption>
           </figure>
           </Box>
