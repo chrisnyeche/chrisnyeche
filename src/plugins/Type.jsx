@@ -3,7 +3,7 @@ import{ useState, useEffect } from "react"
 
 const Type = () => {
   const [text, setText] = useState("");
-  const [fullText] = useState("I am Chris Nmasichi Favour Nyeche.");
+  const [fullText] = useState("I am Chris Nyeche.");
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
