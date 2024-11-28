@@ -35,26 +35,35 @@ const Connect = () => {
       answer: "Port Harcourt, Nigeria",
     },
     {
-      tag: "Code Base:",
-      answer: "Web/Mobile.",
+      tag: "Role:",
+      answer: "Mobile Developer & Software Engineer",
     },
     {
-      tag: "Style Of Work:",
-      answer: "Remote/Freelance/Hybrid",
+      tag: "Specialization:",
+      answer: "Web & Mobile Application Development",
     },
     {
-      tag: "Stack:",
-      answer: "Web 3.0 Front-End Developer",
+      tag: "Work Style:",
+      answer: "Remote | Freelance | Hybrid",
     },
     {
-      tag: "Personal Skills:",
-      answer: " Communication, Public Speaking, Teamwork, Time Management, Leadership",
+      tag: "Tech Stack:",
+      answer: "React Native, PHP, JavaScript, TypeScript, Web3, REST APIs",
     },
     {
-      tag: "Career Skills:",
-      answer: "Front-End Programming: HTML5, CSS3, AJAX, Wordpress Engineering, Verbal and Written Communication, Web Components Development, Bug Resolution, Project Scoping and Production Worm, Website Maintenance, End user training, User Research and Analysis.",
+      tag: "Professional Skills:",
+      answer: "Mobile App Development, Front-End Engineering, Software Architecture, API Integration, Code Optimization",
+    },
+    {
+      tag: "Soft Skills:",
+      answer: "Communication, Public Speaking, Team Collaboration, Time Management, Leadership",
+    },
+    {
+      tag: "Core Competencies:",
+      answer: "Responsive UI Design, Cross-Platform Development, Performance Optimization, User Research, End-User Training,",
     },
   ];
+  
   return (
     <Box>
       {!loader ? (

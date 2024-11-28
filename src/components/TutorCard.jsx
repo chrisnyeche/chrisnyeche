@@ -7,7 +7,7 @@ export default function TutorCard() {
   const Tutors = [
     {
       CoverImage: "https://res.cloudinary.com/practicaldev/image/fetch/s--NzgxrJEe--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mdvk568xm4hmk3bjfsqs.gif",
-      avatar: "https://pbs.twimg.com/profile_images/1477312025554419713/YxHvu_SD_400x400.jpg",
+      avatar: "https://pbs.twimg.com/profile_images/1752355537776267265/kLv5KrqC_400x400.jpg",
       name: "Bob Ziroll",
       description: "Head of Ed. in Scrimba",
       connect: "https://www.linkedin.com/in/bobziroll/",

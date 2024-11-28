@@ -60,79 +60,79 @@ export default class ProSlider extends Component {
           {/* Designopers */}
           <Box key={1} px={{base: "30px", lg:"0px"}}>
               <figure class="effect-julia">
-                <img src={"https://www.nftsstreet.com/wp-content/uploads/2022/01/Webp.net-gifmaker.gif"} alt="img22" />
+                <img src={"https://cdn.dribbble.com/users/230875/screenshots/15549334/indiadribble.gif"} alt="img22" />
                 <figcaption>
                   <h2>
-                   <span>WE PRINT WALLS</span>
+                   <span>NFT Mobile App</span>
                   </h2>
                   <div>
-                    <p>A German Wall printing Company</p>
+                    <p>NFT Marketplace</p>
                   </div>
-                  <a target={"blank"} href="https://weprintwalls.de/">View more</a>
+                  <a target="_blank" rel="noreferrer" href="https://github.com/chrisnyeche/nft-marketplace/">View more</a>
                 </figcaption>
               </figure>
           </Box>
-          {/* Umake */}
+          {/* WarenHandel */}
           <Box key={2} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-goliath">
             <img src={"https://nftartwork.co.uk/wp-content/uploads/2021/08/Mike-Tyson.gif"} alt="img23" />
             <figcaption>
               <h2>
-               <span>DWH</span>
+               <span>WarenHandel</span>
               </h2>
-              <p>Booking & Ecommerce.</p>
-              <a target={"blank"} href="dwh-warehandel.de">View more</a>
+              <p>Booking & Ecommerce App</p>
+              <a target="_blank" rel="noreferrer" href="https://warenhandel.netlify.app/">View more</a>
             </figcaption>
           </figure>
           </Box>
-          {/* Splash Music */}
+          {/* Designopers */}
           <Box key={3} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-apollo">
             <img src={"https://dls.so/mint/img/avatar.gif"} alt="img18" />
             <figcaption>
               <h2>
-                Splash <span>Music</span>
+                Designopers <span>App</span>
               </h2>
-              <p>The Music Application.</p>
-              <a target={"blank"} href="https://splashmusic.netlify.app/">View more</a>
+              <p>Coming Soon.</p>
+              <a target="_blank" rel="noreferrer" href="https://designopers.onrender.com/">View more</a>
             </figcaption>
           </figure>
           </Box>
-          {/* GateHouse */}
+          {/* Renaissancee */}
           <Box key={4} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-duke">
             <img src="https://cdn.dribbble.com/users/1382369/screenshots/17876859/media/f3686481b564dd299418692bc8384caf.gif" alt="img03" />
             <figcaption>
               <h2>
-                Gate <span>House</span>
+              Renaissancee <span>Corp.</span>
               </h2>
               <p>
-                <Link target={"blank"} href="https://gatehouse.idea.cinfores.com/" _hover={{color: "white"}}>
-                <Text> A Visitor tracking app</Text>
+                <Link href="https://renaissance.onrender.com" _hover={{color: "white"}}>
+                <Text> Re-Imagine Africa</Text>
                 </Link>
               </p>
             </figcaption>
           </figure>
           </Box>
-          {/* Netflix */}
+          {/* Aora */}
           <Box key={5} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-terry">
             <img src="https://airnfts.s3.amazonaws.com/profile-images/20220221/0xbbC213d442cDe37138b4383565D44dB3F4F79aff_1645477060045.gif" alt="img16" />
             <figcaption>
               <h2>
-                <Text as={"span"} color="red">NETFLIX</Text>
+                <Text as={"span"} color="red"><a target="_blank" rel="noreferrer" href="https://github.com/chrisnyeche/aora">AORA <Text as={"span"} color="white">APP</Text></a></Text>
               </h2>
               <p>
-                <a href="./">
+                <a target="_blank" rel="noreferrer" href="./">
                   P
                 </a>
-                <a href="./">
+                <a target="_blank" rel="noreferrer" href="https://github.com/chrisnyeche/aora">
                 <Icon as={FaPlayCircle} color={"red"}/>
                 </a>
-                <a href="./">
+                <a target="_blank" rel="noreferrer" href="./">
                 A
                 </a>
-                <a href="./">
+                <a target="_blank" rel="noreferrer" href="./">
                 Y
                 </a>
               </p>
@@ -148,7 +148,7 @@ export default class ProSlider extends Component {
                 Lemon <span>Squeezy</span>
               </Text>
               <p>
-                <a target={"blank"} href="https://lemonsqueezy.netlify.app">
+                <a target="_blank" rel="noreferrer" href="https://lemonsqueezy.netlify.app">
                  Sell Digital products
                 </a>
               </p>
@@ -164,7 +164,7 @@ export default class ProSlider extends Component {
                 Movie <span>Hub</span>
               </h2>
               <p>View your favourite movies.</p>
-              <a target={"blank"} href="https://chrisnyeche.github.io/movie_hub/">View more</a>
+              <a target="_blank" rel="noreferrer" href="https://chrisnyeche.github.io/movie_hub/">View more</a>
             </figcaption>
           </figure>
           </Box>
@@ -177,20 +177,20 @@ export default class ProSlider extends Component {
                 Nano <span>Site</span>
               </h2>
               <p>Bio site for creative minds.</p>
-              <a target={"blank"} href="https://nanosite.onrender.com/">View more</a>
+              <a target="_blank" rel="noreferrer" href="https://nanosite.onrender.com/">View more</a>
             </figcaption>
           </figure>
           </Box>
-          {/* Bluewaether */}
+          {/* Home Lesson */}
           <Box key={9} px={{base: "40px", lg:"0px"}}>
           <figure class="effect-jazz">
-            <img src="https://rndmcharacters-s3.s3.amazonaws.com/InvisibleFriends-roadmap/KITH_web.gif" alt="img25" />
+            <img src="https://cdn.dribbble.com/users/2175374/screenshots/5337709/back-to-school-f.gif" alt="img25" />
             <figcaption>
               <h2>
-                Blue Weather <span>App</span>
+                Home Lesson <span>App</span>
               </h2>
-              <p>View weather condition</p>
-              <a target={"blank"} href="https://blueweather.onrender.com/">View more</a>
+              <p>Learn From Your Home.</p>
+              <a target="_blank" rel="noreferrer" href="https://homelesson.onrender.com">View more</a>
             </figcaption>
           </figure>
           </Box>
